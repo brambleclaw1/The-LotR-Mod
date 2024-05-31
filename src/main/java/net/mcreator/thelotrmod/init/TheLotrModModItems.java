@@ -19,6 +19,7 @@ import net.mcreator.thelotrmod.item.TarnishedRingItem;
 import net.mcreator.thelotrmod.item.StingItem;
 import net.mcreator.thelotrmod.item.SevenRingsItem;
 import net.mcreator.thelotrmod.item.RawMithrilItem;
+import net.mcreator.thelotrmod.item.RawArchaicGoldItem;
 import net.mcreator.thelotrmod.item.PipeItem;
 import net.mcreator.thelotrmod.item.OrcristItem;
 import net.mcreator.thelotrmod.item.NineRingsItem;
@@ -33,6 +34,7 @@ import net.mcreator.thelotrmod.item.MistyMountainsItem;
 import net.mcreator.thelotrmod.item.HeatedMithrilItem;
 import net.mcreator.thelotrmod.item.GlamdringItem;
 import net.mcreator.thelotrmod.item.BurningMagmaShardItem;
+import net.mcreator.thelotrmod.item.ArchaicGoldIngotItem;
 import net.mcreator.thelotrmod.TheLotrModMod;
 
 public class TheLotrModModItems {
@@ -76,6 +78,9 @@ public class TheLotrModModItems {
 	public static final RegistryObject<Item> MITHRIL_TOOLS_HOE = REGISTRY.register("mithril_tools_hoe", () -> new Mithril_ToolsHoeItem());
 	public static final RegistryObject<Item> FORGER = block(TheLotrModModBlocks.FORGER);
 	public static final RegistryObject<Item> DEEPSLATE_MITHRIL_ORE = block(TheLotrModModBlocks.DEEPSLATE_MITHRIL_ORE);
+	public static final RegistryObject<Item> ARCHAIC_GOLD_INGOT = REGISTRY.register("archaic_gold_ingot", () -> new ArchaicGoldIngotItem());
+	public static final RegistryObject<Item> RAW_ARCHAIC_GOLD = REGISTRY.register("raw_archaic_gold", () -> new RawArchaicGoldItem());
+	public static final RegistryObject<Item> ARCHAIC_GOLD = block(TheLotrModModBlocks.ARCHAIC_GOLD);
 
 	// Start of user code block custom items
 	// End of user code block custom items

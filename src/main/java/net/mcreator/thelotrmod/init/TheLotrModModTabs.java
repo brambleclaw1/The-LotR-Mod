@@ -55,6 +55,9 @@ public class TheLotrModModTabs {
 				tabData.accept(TheLotrModModBlocks.MALLORN_BUTTON.get().asItem());
 				tabData.accept(TheLotrModModBlocks.FORGER.get().asItem());
 				tabData.accept(TheLotrModModBlocks.DEEPSLATE_MITHRIL_ORE.get().asItem());
+				tabData.accept(TheLotrModModItems.ARCHAIC_GOLD_INGOT.get());
+				tabData.accept(TheLotrModModItems.RAW_ARCHAIC_GOLD.get());
+				tabData.accept(TheLotrModModBlocks.ARCHAIC_GOLD.get().asItem());
 			})
 
 					.build());

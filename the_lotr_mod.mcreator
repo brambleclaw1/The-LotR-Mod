@@ -20,8 +20,8 @@
       "registry_name": "mithril_ingot",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thelotrmod/item/MithrilIngotItem.java",
-          "src/main/resources/assets/the_lotr_mod/models/item/mithril_ingot.json"
+          "src/main/resources/assets/the_lotr_mod/models/item/mithril_ingot.json",
+          "src/main/java/net/mcreator/thelotrmod/item/MithrilIngotItem.java"
         ]
       },
       "path": "~/Items"
@@ -50,8 +50,8 @@
       "registry_name": "heated_mithril",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_lotr_mod/models/item/heated_mithril.json",
-          "src/main/java/net/mcreator/thelotrmod/item/HeatedMithrilItem.java"
+          "src/main/java/net/mcreator/thelotrmod/item/HeatedMithrilItem.java",
+          "src/main/resources/assets/the_lotr_mod/models/item/heated_mithril.json"
         ]
       },
       "path": "~/Items"
@@ -94,8 +94,8 @@
       "registry_name": "burning_magma_shard",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_lotr_mod/models/item/burning_magma_shard.json",
-          "src/main/java/net/mcreator/thelotrmod/item/BurningMagmaShardItem.java"
+          "src/main/java/net/mcreator/thelotrmod/item/BurningMagmaShardItem.java",
+          "src/main/resources/assets/the_lotr_mod/models/item/burning_magma_shard.json"
         ]
       },
       "path": "~/Items"
@@ -109,13 +109,13 @@
       "registry_name": "burning_magma",
       "metadata": {
         "files": [
+          "src/main/resources/data/the_lotr_mod/worldgen/placed_feature/burning_magma.json",
           "src/main/resources/data/the_lotr_mod/loot_tables/blocks/burning_magma.json",
+          "src/main/resources/assets/the_lotr_mod/models/block/burning_magma.json",
+          "src/main/resources/assets/the_lotr_mod/blockstates/burning_magma.json",
+          "src/main/resources/assets/the_lotr_mod/models/item/burning_magma.json",
           "src/main/resources/data/the_lotr_mod/forge/biome_modifier/burning_magma_biome_modifier.json",
           "src/main/resources/data/the_lotr_mod/worldgen/configured_feature/burning_magma.json",
-          "src/main/resources/data/the_lotr_mod/worldgen/placed_feature/burning_magma.json",
-          "src/main/resources/assets/the_lotr_mod/blockstates/burning_magma.json",
-          "src/main/resources/assets/the_lotr_mod/models/block/burning_magma.json",
-          "src/main/resources/assets/the_lotr_mod/models/item/burning_magma.json",
           "src/main/java/net/mcreator/thelotrmod/block/BurningMagmaBlock.java"
         ]
       },
@@ -1303,12 +1303,12 @@
       "registry_name": "forger",
       "metadata": {
         "files": [
+          "src/main/resources/assets/the_lotr_mod/models/block/forger.json",
+          "src/main/resources/data/the_lotr_mod/loot_tables/blocks/forger.json",
           "src/main/java/net/mcreator/thelotrmod/block/ForgerBlock.java",
           "src/main/java/net/mcreator/thelotrmod/block/entity/ForgerBlockEntity.java",
-          "src/main/resources/assets/the_lotr_mod/blockstates/forger.json",
           "src/main/resources/assets/the_lotr_mod/models/item/forger.json",
-          "src/main/resources/assets/the_lotr_mod/models/block/forger.json",
-          "src/main/resources/data/the_lotr_mod/loot_tables/blocks/forger.json"
+          "src/main/resources/assets/the_lotr_mod/blockstates/forger.json"
         ]
       },
       "path": "~/Blocks"
@@ -1446,6 +1446,122 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "ForgerGui",
+      "type": "gui",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forger_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thelotrmod/client/gui/ForgerGuiScreen.java",
+          "src/main/java/net/mcreator/thelotrmod/world/inventory/ForgerGuiMenu.java"
+        ]
+      },
+      "path": "~/Gui"
+    },
+    {
+      "name": "ArchaicGoldIngot",
+      "type": "item",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "archaic_gold_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_lotr_mod/models/item/archaic_gold_ingot.json",
+          "src/main/java/net/mcreator/thelotrmod/item/ArchaicGoldIngotItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "RawArchaicGold",
+      "type": "item",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_archaic_gold",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_lotr_mod/models/item/raw_archaic_gold.json",
+          "src/main/java/net/mcreator/thelotrmod/item/RawArchaicGoldItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "ArchaicGold",
+      "type": "block",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "archaic_gold",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_lotr_mod/blockstates/archaic_gold.json",
+          "src/main/resources/assets/the_lotr_mod/models/block/archaic_gold.json",
+          "src/main/resources/assets/the_lotr_mod/models/item/archaic_gold.json",
+          "src/main/resources/data/the_lotr_mod/worldgen/placed_feature/archaic_gold.json",
+          "src/main/resources/data/the_lotr_mod/worldgen/configured_feature/archaic_gold.json",
+          "src/main/java/net/mcreator/thelotrmod/block/ArchaicGoldBlock.java",
+          "src/main/resources/data/the_lotr_mod/forge/biome_modifier/archaic_gold_biome_modifier.json",
+          "src/main/resources/data/the_lotr_mod/loot_tables/blocks/archaic_gold.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ArchaicIngotRecipe",
+      "type": "recipe",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "archaic_ingot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_lotr_mod/recipes/archaic_ingot_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "ForgerRecipe",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forger_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thelotrmod/procedures/ForgerRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [],
@@ -1524,6 +1640,9 @@
     "BIOMES:minecraft:has_structure/pillager_outpost": [
       "~CUSTOM:Mordor"
     ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:ArchaicGold"
+    ],
     "BIOMES:the_lotr_mod:is_lotr_biome": [
       "CUSTOM:DeadMarshes",
       "CUSTOM:ElvenForest",
@@ -1554,6 +1673,7 @@
       "~CUSTOM:MallornLeaves"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:ArchaicGold",
       "~CUSTOM:DeepslateMithrilOre",
       "~CUSTOM:MithrilOre",
       "~CUSTOM:BurningMagma"
@@ -1586,16 +1706,16 @@
     "en_us": {
       "item.the_hobbit_mod.mithril_armor_boots": "Mithril Boots",
       "block.the_lotr_mod.mallorn_leaves": "Mallorn Leaves",
-      "biome.the_hobbit_mod.elven_forest": "Elven Forest",
       "subtitles.nazgul_dead": "",
+      "biome.the_hobbit_mod.elven_forest": "Elven Forest",
       "item.the_lotr_mod.orc_spawn_egg": "Orc Spawn Egg",
       "subtitles.feast_of_starlight": "",
       "item.the_lotr_mod.mithril_armor_boots": "Mithril Boots",
       "biome.the_lotr_mod.mordor": "Mordor",
       "advancements.the_bane_of_men.title": "The Bane Of Men",
       "block.the_lotr_mod.mallorn_wood": "Mallorn Wood",
-      "block.the_hobbit_mod.mallorn_pressure_plate": "Mallorn Pressure Plate",
       "advancements.elf_friend.descr": "Enter a Elvish Forest.",
+      "block.the_hobbit_mod.mallorn_pressure_plate": "Mallorn Pressure Plate",
       "subtitles.smaug": "",
       "item.the_hobbit_mod.burning_magma_shard": "Burning Magma Shard",
       "block.the_hobbit_mod.mallorn_fence": "Mallorn Fence",
@@ -1613,8 +1733,8 @@
       "subtitles.lothlorien": "",
       "biome.the_hobbit_mod.dead_marshes": "Dead Marshes",
       "block.the_hobbit_mod.mallorn_wood": "Mallorn Wood",
-      "item.the_hobbit_mod.heated_mithril": "Heated Mithril",
       "block.the_lotr_mod.deepslate_mithril_ore": "Mithril Ore",
+      "item.the_hobbit_mod.heated_mithril": "Heated Mithril",
       "item_group.the_lotr_mod.the_hobbit_mod": "The Hobbit Mod",
       "item.the_hobbit_mod.orc_spawn_egg": "Orc Spawn Egg",
       "item.the_lotr_mod.mithril_tools_shovel": "Mithril Shovel",
@@ -1667,10 +1787,13 @@
       "entity.the_hobbit_mod.orc": "Orc",
       "block.the_lotr_mod.mallorn_fence_gate": "Mallorn Fence Gate",
       "item.the_lotr_mod.mithril_armor_leggings": "Mithril Leggings",
+      "gui.the_lotr_mod.forger_gui.label_forger": "Forger",
       "advancements.its_worth_is_greater.title": "It\u0027s worth is greater then the whole Shire...",
       "item.the_lotr_mod.mithril_tools_pickaxe": "Mithril Pickaxe",
       "subtitles.get_ring": "",
       "item.the_lotr_mod.tarnished_ring": "Tarnished Ring",
+      "block.the_lotr_mod.archaic_gold": "Archaic Gold",
+      "item.the_lotr_mod.raw_archaic_gold": "Raw Archaic Gold",
       "item.the_hobbit_mod.the_one_ring": "The One Ring",
       "item.the_lotr_mod.nine_rings": "The Nine Rings",
       "item.the_lotr_mod.nazgul_spawn_egg": "Nazgul Spawn Egg",
@@ -1714,7 +1837,8 @@
       "advancements.the_hobbit_mod_install.title": "The Land of Arda",
       "block.the_hobbit_mod.mallorn_planks": "Mallorn Planks",
       "item.the_lotr_mod.mithril_tools_sword": "Mithril Sword",
-      "item.the_hobbit_mod.misty_mountains": "Misty Mountains"
+      "item.the_hobbit_mod.misty_mountains": "Misty Mountains",
+      "item.the_lotr_mod.archaic_gold_ingot": "Archaic Gold Ingot"
     }
   },
   "foldersRoot": {

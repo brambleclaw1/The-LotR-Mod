@@ -20,6 +20,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.thelotrmod.world.features.StructureFeature;
 import net.mcreator.thelotrmod.init.TheLotrModModTabs;
 import net.mcreator.thelotrmod.init.TheLotrModModSounds;
+import net.mcreator.thelotrmod.init.TheLotrModModMenus;
 import net.mcreator.thelotrmod.init.TheLotrModModItems;
 import net.mcreator.thelotrmod.init.TheLotrModModEntities;
 import net.mcreator.thelotrmod.init.TheLotrModModBlocks;
@@ -54,6 +55,7 @@ public class TheLotrModMod {
 
 		StructureFeature.REGISTRY.register(bus);
 
+		TheLotrModModMenus.REGISTRY.register(bus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

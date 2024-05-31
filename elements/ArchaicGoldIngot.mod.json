@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "magma_shard",
+    "texture": "archaic_gold_ingot",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Burning Magma Shard",
-    "rarity": "COMMON",
+    "name": "Archaic Gold Ingot",
+    "rarity": "EPIC",
     "creativeTab": {
       "value": "CUSTOM:TheHobbitMod"
     },
