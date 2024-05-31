@@ -9,12 +9,6 @@
       "max_delay": 24000,
       "replace_current_music": true
     },
-    "particle": {
-      "options": {
-        "type": "portal"
-      },
-      "probability": 0.005
-    },
     "foliage_color": -26368,
     "grass_color": -3381760,
     "sky_color": -3381760,

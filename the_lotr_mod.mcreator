@@ -768,9 +768,9 @@
       "registry_name": "hobbit_plains",
       "metadata": {
         "files": [
+          "src/main/resources/data/the_lotr_mod/worldgen/placed_feature/hobbit_plains_tree.json",
           "src/main/resources/data/the_lotr_mod/worldgen/configured_feature/hobbit_plains_tree.json",
-          "src/main/resources/data/the_lotr_mod/worldgen/biome/hobbit_plains.json",
-          "src/main/resources/data/the_lotr_mod/worldgen/placed_feature/hobbit_plains_tree.json"
+          "src/main/resources/data/the_lotr_mod/worldgen/biome/hobbit_plains.json"
         ]
       },
       "path": "~/Biomes"
@@ -1513,7 +1513,6 @@
       "CUSTOM:MallornLog"
     ],
     "BIOMES:minecraft:has_structure/stronghold": [
-      "~CUSTOM:HobbitPlains",
       "~CUSTOM:Mordor",
       "~CUSTOM:ElvenForest"
     ],

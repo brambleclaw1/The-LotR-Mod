@@ -13,22 +13,7 @@
     "separation": 30,
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:DeadMarshes"
-      },
-      {
-        "value": "CUSTOM:ElvenForest"
-      },
-      {
-        "value": "CUSTOM:HobbitPlains"
-      },
-      {
-        "value": "CUSTOM:MistyMountain"
-      },
-      {
-        "value": "CUSTOM:Mordor"
-      },
-      {
-        "value": "CUSTOM:WeatherHills"
+        "value": "#the_lotr_mod:is_lotr_biome"
       }
     ],
     "surfaceDetectionType": "MOTION_BLOCKING",
