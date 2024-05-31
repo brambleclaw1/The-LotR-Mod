@@ -2,7 +2,7 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "mithril_ore",
+    "texture": "deepslate_mithril_ore",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -37,7 +37,7 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 12.0,
+    "hardness": 18.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -122,7 +122,7 @@
     "generateFeature": true,
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:MistyMountain"
+        "value": "#the_lotr_mod:is_lotr_biome"
       }
     ],
     "blocksToReplace": [
@@ -136,10 +136,10 @@
         "value": "Blocks.COBBLED_DEEPSLATE"
       }
     ],
-    "generationShape": "UNIFORM",
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 9,
-    "minGenerateHeight": 0,
-    "maxGenerateHeight": 256
+    "generationShape": "TRIANGLE",
+    "frequencyPerChunks": 2,
+    "frequencyOnChunk": 8,
+    "minGenerateHeight": -64,
+    "maxGenerateHeight": 0
   }
 }

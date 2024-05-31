@@ -209,14 +209,14 @@
       "registry_name": "mithril_ore",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thelotrmod/block/MithrilOreBlock.java",
-          "src/main/resources/data/the_lotr_mod/loot_tables/blocks/mithril_ore.json",
+          "src/main/resources/data/the_lotr_mod/worldgen/configured_feature/mithril_ore.json",
+          "src/main/resources/assets/the_lotr_mod/models/item/mithril_ore.json",
           "src/main/resources/assets/the_lotr_mod/blockstates/mithril_ore.json",
           "src/main/resources/data/the_lotr_mod/worldgen/placed_feature/mithril_ore.json",
-          "src/main/resources/assets/the_lotr_mod/models/item/mithril_ore.json",
           "src/main/resources/data/the_lotr_mod/forge/biome_modifier/mithril_ore_biome_modifier.json",
-          "src/main/resources/assets/the_lotr_mod/models/block/mithril_ore.json",
-          "src/main/resources/data/the_lotr_mod/worldgen/configured_feature/mithril_ore.json"
+          "src/main/resources/data/the_lotr_mod/loot_tables/blocks/mithril_ore.json",
+          "src/main/java/net/mcreator/thelotrmod/block/MithrilOreBlock.java",
+          "src/main/resources/assets/the_lotr_mod/models/block/mithril_ore.json"
         ]
       },
       "path": "~/Blocks"
@@ -1342,40 +1342,6 @@
       "path": "~/Biomes"
     },
     {
-      "name": "DolGuldurFeature",
-      "type": "feature",
-      "sortid": 103,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dol_guldur_feature",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/the_lotr_mod/worldgen/placed_feature/dol_guldur_feature.json",
-          "src/main/resources/data/the_lotr_mod/worldgen/configured_feature/dol_guldur_feature.json",
-          "src/main/resources/data/the_lotr_mod/forge/biome_modifier/dol_guldur_feature_biome_modifier.json"
-        ],
-        "has_nbt_structure": true
-      },
-      "path": "~/Structures"
-    },
-    {
-      "name": "RuinsFeature",
-      "type": "feature",
-      "sortid": 104,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ruins_feature",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/the_lotr_mod/worldgen/placed_feature/ruins_feature.json",
-          "src/main/resources/data/the_lotr_mod/forge/biome_modifier/ruins_feature_biome_modifier.json",
-          "src/main/resources/data/the_lotr_mod/worldgen/configured_feature/ruins_feature.json"
-        ],
-        "has_nbt_structure": true
-      },
-      "path": "~/Structures"
-    },
-    {
       "name": "GiantMallornTreeFeature",
       "type": "feature",
       "sortid": 105,
@@ -1445,20 +1411,41 @@
       "path": "~/Structures"
     },
     {
-      "name": "ElvenVillage",
+      "name": "DolGuldur",
       "type": "structure",
-      "sortid": 109,
+      "sortid": 110,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "elven_village",
+      "registry_name": "dol_guldur",
       "metadata": {
         "files": [
-          "src/main/resources/data/the_lotr_mod/worldgen/structure/elven_village.json",
-          "src/main/resources/data/the_lotr_mod/worldgen/structure_set/elven_village.json",
-          "src/main/resources/data/the_lotr_mod/worldgen/template_pool/elven_village.json"
+          "src/main/resources/data/the_lotr_mod/worldgen/structure/dol_guldur.json",
+          "src/main/resources/data/the_lotr_mod/worldgen/structure_set/dol_guldur.json",
+          "src/main/resources/data/the_lotr_mod/worldgen/template_pool/dol_guldur.json"
         ]
       },
       "path": "~/Structures"
+    },
+    {
+      "name": "DeepslateMithrilOre",
+      "type": "block",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_mithril_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_lotr_mod/models/block/deepslate_mithril_ore.json",
+          "src/main/resources/data/the_lotr_mod/worldgen/placed_feature/deepslate_mithril_ore.json",
+          "src/main/resources/assets/the_lotr_mod/blockstates/deepslate_mithril_ore.json",
+          "src/main/java/net/mcreator/thelotrmod/block/DeepslateMithrilOreBlock.java",
+          "src/main/resources/assets/the_lotr_mod/models/item/deepslate_mithril_ore.json",
+          "src/main/resources/data/the_lotr_mod/worldgen/configured_feature/deepslate_mithril_ore.json",
+          "src/main/resources/data/the_lotr_mod/loot_tables/blocks/deepslate_mithril_ore.json",
+          "src/main/resources/data/the_lotr_mod/forge/biome_modifier/deepslate_mithril_ore_biome_modifier.json"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [],
@@ -1531,11 +1518,20 @@
       "~CUSTOM:ElvenForest"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:DeepslateMithrilOre",
       "~CUSTOM:MithrilOre",
       "~CUSTOM:BurningMagma"
     ],
     "BIOMES:minecraft:has_structure/pillager_outpost": [
       "~CUSTOM:Mordor"
+    ],
+    "BIOMES:the_lotr_mod:is_lotr_biome": [
+      "CUSTOM:DeadMarshes",
+      "CUSTOM:ElvenForest",
+      "CUSTOM:HobbitPlains",
+      "CUSTOM:MistyMountain",
+      "CUSTOM:Mordor",
+      "CUSTOM:WeatherHills"
     ],
     "BIOMES:minecraft:has_structure/mineshaft": [
       "~CUSTOM:ElvenForest"
@@ -1559,6 +1555,7 @@
       "~CUSTOM:MallornLeaves"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:DeepslateMithrilOre",
       "~CUSTOM:MithrilOre",
       "~CUSTOM:BurningMagma"
     ],
@@ -1618,6 +1615,7 @@
       "biome.the_hobbit_mod.dead_marshes": "Dead Marshes",
       "block.the_hobbit_mod.mallorn_wood": "Mallorn Wood",
       "item.the_hobbit_mod.heated_mithril": "Heated Mithril",
+      "block.the_lotr_mod.deepslate_mithril_ore": "Mithril Ore",
       "item_group.the_lotr_mod.the_hobbit_mod": "The Hobbit Mod",
       "item.the_hobbit_mod.orc_spawn_egg": "Orc Spawn Egg",
       "item.the_lotr_mod.mithril_tools_shovel": "Mithril Shovel",
@@ -1764,11 +1762,11 @@
         "children": []
       },
       {
-        "name": "Tags",
+        "name": "Features",
         "children": []
       },
       {
-        "name": "Features",
+        "name": "Gui",
         "children": []
       }
     ]

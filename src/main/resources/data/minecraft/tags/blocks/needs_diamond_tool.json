@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "the_lotr_mod:deepslate_mithril_ore",
     "the_lotr_mod:mithril_ore",
     "the_lotr_mod:burning_magma"
   ]

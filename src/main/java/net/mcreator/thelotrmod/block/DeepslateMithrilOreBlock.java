@@ -9,9 +9,9 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.BlockPos;
 
-public class MithrilOreBlock extends Block {
-	public MithrilOreBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(12f, 10f).requiresCorrectToolForDrops());
+public class DeepslateMithrilOreBlock extends Block {
+	public DeepslateMithrilOreBlock() {
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(18f, 10f).requiresCorrectToolForDrops());
 	}
 
 	@Override

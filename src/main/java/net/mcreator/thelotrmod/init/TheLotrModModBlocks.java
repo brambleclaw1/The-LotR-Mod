@@ -22,6 +22,7 @@ import net.mcreator.thelotrmod.block.MallornFenceGateBlock;
 import net.mcreator.thelotrmod.block.MallornFenceBlock;
 import net.mcreator.thelotrmod.block.MallornButtonBlock;
 import net.mcreator.thelotrmod.block.ForgerBlock;
+import net.mcreator.thelotrmod.block.DeepslateMithrilOreBlock;
 import net.mcreator.thelotrmod.block.BurningMagmaBlock;
 import net.mcreator.thelotrmod.TheLotrModMod;
 
@@ -40,6 +41,7 @@ public class TheLotrModModBlocks {
 	public static final RegistryObject<Block> MALLORN_PRESSURE_PLATE = REGISTRY.register("mallorn_pressure_plate", () -> new MallornPressurePlateBlock());
 	public static final RegistryObject<Block> MALLORN_BUTTON = REGISTRY.register("mallorn_button", () -> new MallornButtonBlock());
 	public static final RegistryObject<Block> FORGER = REGISTRY.register("forger", () -> new ForgerBlock());
+	public static final RegistryObject<Block> DEEPSLATE_MITHRIL_ORE = REGISTRY.register("deepslate_mithril_ore", () -> new DeepslateMithrilOreBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

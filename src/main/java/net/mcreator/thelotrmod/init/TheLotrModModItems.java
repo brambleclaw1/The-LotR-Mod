@@ -75,6 +75,7 @@ public class TheLotrModModItems {
 	public static final RegistryObject<Item> MITHRIL_TOOLS_SHOVEL = REGISTRY.register("mithril_tools_shovel", () -> new Mithril_ToolsShovelItem());
 	public static final RegistryObject<Item> MITHRIL_TOOLS_HOE = REGISTRY.register("mithril_tools_hoe", () -> new Mithril_ToolsHoeItem());
 	public static final RegistryObject<Item> FORGER = block(TheLotrModModBlocks.FORGER);
+	public static final RegistryObject<Item> DEEPSLATE_MITHRIL_ORE = block(TheLotrModModBlocks.DEEPSLATE_MITHRIL_ORE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

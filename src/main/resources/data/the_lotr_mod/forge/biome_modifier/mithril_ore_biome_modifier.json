@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#is_overworld",
+  "biomes": "the_lotr_mod:misty_mountain",
   "features": "the_lotr_mod:mithril_ore",
   "step": "underground_ores"
 }

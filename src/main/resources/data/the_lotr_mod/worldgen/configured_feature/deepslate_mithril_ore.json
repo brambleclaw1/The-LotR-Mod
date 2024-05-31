@@ -1,7 +1,7 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "size": 9,
+    "size": 8,
     "discard_chance_on_air_exposure": 0,
     "targets": [
       {
@@ -10,7 +10,7 @@
           "tag": "minecraft:stone"
         },
         "state": {
-          "Name": "the_lotr_mod:mithril_ore"
+          "Name": "the_lotr_mod:deepslate_mithril_ore"
         }
       },
       {
@@ -24,7 +24,7 @@
           }
         },
         "state": {
-          "Name": "the_lotr_mod:mithril_ore"
+          "Name": "the_lotr_mod:deepslate_mithril_ore"
         }
       },
       {
@@ -35,7 +35,7 @@
           }
         },
         "state": {
-          "Name": "the_lotr_mod:mithril_ore"
+          "Name": "the_lotr_mod:deepslate_mithril_ore"
         }
       }
     ]

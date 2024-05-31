@@ -1,14 +1,14 @@
 {
   "structures": [
     {
-      "structure": "the_lotr_mod:elven_village",
+      "structure": "the_lotr_mod:dol_guldur",
       "weight": 1
     }
   ],
   "placement": {
     "type": "minecraft:random_spread",
-    "spacing": 5,
-    "separation": 2,
-    "salt": 1875563511
+    "spacing": 40,
+    "separation": 35,
+    "salt": 1117018171
   }
 }

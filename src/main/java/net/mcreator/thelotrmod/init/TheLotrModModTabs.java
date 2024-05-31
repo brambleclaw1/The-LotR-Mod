@@ -54,6 +54,7 @@ public class TheLotrModModTabs {
 				tabData.accept(TheLotrModModBlocks.MALLORN_FENCE_GATE.get().asItem());
 				tabData.accept(TheLotrModModBlocks.MALLORN_BUTTON.get().asItem());
 				tabData.accept(TheLotrModModBlocks.FORGER.get().asItem());
+				tabData.accept(TheLotrModModBlocks.DEEPSLATE_MITHRIL_ORE.get().asItem());
 			})
 
 					.build());
