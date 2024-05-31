@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " aa",
+    " aa",
+    "ba "
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:planks"
+    },
+    "b": {
+      "item": "minecraft:cobweb"
+    }
+  },
+  "result": {
+    "item": "the_lotr_mod:pipe",
+    "count": 1
+  }
+}

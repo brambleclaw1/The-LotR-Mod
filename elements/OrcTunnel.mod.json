@@ -1,0 +1,41 @@
+{
+  "_fv": 60,
+  "_type": "structure",
+  "definition": {
+    "structure": "orc_tunnel",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 35,
+    "separation": 30,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:DeadMarshes"
+      },
+      {
+        "value": "CUSTOM:ElvenForest"
+      },
+      {
+        "value": "CUSTOM:HobbitPlains"
+      },
+      {
+        "value": "CUSTOM:MistyMountain"
+      },
+      {
+        "value": "CUSTOM:Mordor"
+      },
+      {
+        "value": "CUSTOM:WeatherHills"
+      }
+    ],
+    "surfaceDetectionType": "MOTION_BLOCKING",
+    "terrainAdaptation": "bury",
+    "generationStep": "UNDERGROUND_STRUCTURES",
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
+  }
+}

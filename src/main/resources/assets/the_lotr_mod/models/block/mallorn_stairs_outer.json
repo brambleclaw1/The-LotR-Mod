@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "the_lotr_mod:block/mallorn_planks",
+    "top": "the_lotr_mod:block/mallorn_planks",
+    "side": "the_lotr_mod:block/mallorn_planks"
+  },
+  "render_type": "solid"
+}

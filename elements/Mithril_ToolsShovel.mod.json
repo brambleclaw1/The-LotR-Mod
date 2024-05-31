@@ -1,0 +1,34 @@
+{
+  "_fv": 60,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Spade",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "mithril_tools_shovel",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Mithril Shovel",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "harvestLevel": 18,
+    "efficiency": 22.0,
+    "attackSpeed": 1.0,
+    "enchantability": 126,
+    "damageVsEntity": 18.0,
+    "usageCount": 5419,
+    "blocksAffected": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:MithrilIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

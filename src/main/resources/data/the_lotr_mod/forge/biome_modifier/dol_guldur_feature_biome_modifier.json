@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "the_lotr_mod:mordor",
+  "features": "the_lotr_mod:dol_guldur_feature",
+  "step": "surface_structures"
+}

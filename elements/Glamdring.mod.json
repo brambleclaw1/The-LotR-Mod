@@ -1,0 +1,30 @@
+{
+  "_fv": 60,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "glamdring",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Glamdring",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "CUSTOM:TheHobbitMod"
+    },
+    "harvestLevel": 6,
+    "efficiency": 14.0,
+    "attackSpeed": 4.0,
+    "enchantability": 28,
+    "damageVsEntity": 30.0,
+    "usageCount": 5067,
+    "blocksAffected": [],
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

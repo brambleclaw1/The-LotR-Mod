@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "the_lotr_mod:heated_mithril"
+  },
+  "addition": {
+    "item": "the_lotr_mod:burning_magma_shard"
+  },
+  "result": {
+    "item": "the_lotr_mod:mithril_ingot"
+  }
+}

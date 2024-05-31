@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:disc_fragment_5"
+    },
+    "b": {
+      "item": "the_lotr_mod:mithril_ingot"
+    }
+  },
+  "result": {
+    "item": "the_lotr_mod:misty_mountains",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 60,
+  "_type": "tab",
+  "definition": {
+    "name": "The Hobbit Mod",
+    "icon": {
+      "value": "CUSTOM:TheOneRing"
+    },
+    "showSearch": false
+  }
+}

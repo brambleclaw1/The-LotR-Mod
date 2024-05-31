@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "the_lotr_mod:mithril_ingot"
+    }
+  },
+  "result": {
+    "item": "the_lotr_mod:mithril_armor_chestplate",
+    "count": 1
+  }
+}

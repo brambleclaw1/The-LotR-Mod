@@ -1,0 +1,50 @@
+{
+  "_fv": 60,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "tarnished_ring",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "Tarnished Ring",
+    "rarity": "RARE",
+    "creativeTab": {
+      "value": "CUSTOM:TheHobbitMod"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 3.0,
+    "damageCount": 3000,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 20.0,
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "TarnishedRingRightclicked"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none"
+  }
+}

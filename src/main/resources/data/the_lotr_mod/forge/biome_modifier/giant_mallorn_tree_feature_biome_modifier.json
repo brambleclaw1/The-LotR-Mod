@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "the_lotr_mod:elven_forest",
+  "features": "the_lotr_mod:giant_mallorn_tree_feature",
+  "step": "surface_structures"
+}
