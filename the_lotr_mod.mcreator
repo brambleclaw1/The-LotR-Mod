@@ -1303,12 +1303,12 @@
       "registry_name": "forger",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_lotr_mod/models/block/forger.json",
-          "src/main/resources/data/the_lotr_mod/loot_tables/blocks/forger.json",
-          "src/main/java/net/mcreator/thelotrmod/block/ForgerBlock.java",
           "src/main/java/net/mcreator/thelotrmod/block/entity/ForgerBlockEntity.java",
+          "src/main/resources/data/the_lotr_mod/loot_tables/blocks/forger.json",
           "src/main/resources/assets/the_lotr_mod/models/item/forger.json",
-          "src/main/resources/assets/the_lotr_mod/blockstates/forger.json"
+          "src/main/resources/assets/the_lotr_mod/models/block/forger.json",
+          "src/main/resources/assets/the_lotr_mod/blockstates/forger.json",
+          "src/main/java/net/mcreator/thelotrmod/block/ForgerBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -1356,7 +1356,7 @@
         ],
         "has_nbt_structure": true
       },
-      "path": "~/Structures"
+      "path": "~/Features"
     },
     {
       "name": "CustomSkySunrise",
@@ -1456,6 +1456,7 @@
       "registry_name": "forger_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/thelotrmod/network/ForgerGuiButtonMessage.java",
           "src/main/java/net/mcreator/thelotrmod/client/gui/ForgerGuiScreen.java",
           "src/main/java/net/mcreator/thelotrmod/world/inventory/ForgerGuiMenu.java"
         ]
@@ -1471,8 +1472,8 @@
       "registry_name": "archaic_gold_ingot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_lotr_mod/models/item/archaic_gold_ingot.json",
-          "src/main/java/net/mcreator/thelotrmod/item/ArchaicGoldIngotItem.java"
+          "src/main/java/net/mcreator/thelotrmod/item/ArchaicGoldIngotItem.java",
+          "src/main/resources/assets/the_lotr_mod/models/item/archaic_gold_ingot.json"
         ]
       },
       "path": "~/Items"
@@ -1562,6 +1563,34 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "TarnishedRingRecipe",
+      "type": "recipe",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tarnished_ring_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_lotr_mod/recipes/tarnished_ring_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "TheForgerRecipe",
+      "type": "recipe",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_forger_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_lotr_mod/recipes/the_forger_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -1706,16 +1735,16 @@
     "en_us": {
       "item.the_hobbit_mod.mithril_armor_boots": "Mithril Boots",
       "block.the_lotr_mod.mallorn_leaves": "Mallorn Leaves",
-      "subtitles.nazgul_dead": "",
       "biome.the_hobbit_mod.elven_forest": "Elven Forest",
+      "subtitles.nazgul_dead": "",
       "item.the_lotr_mod.orc_spawn_egg": "Orc Spawn Egg",
       "subtitles.feast_of_starlight": "",
       "item.the_lotr_mod.mithril_armor_boots": "Mithril Boots",
       "biome.the_lotr_mod.mordor": "Mordor",
       "advancements.the_bane_of_men.title": "The Bane Of Men",
       "block.the_lotr_mod.mallorn_wood": "Mallorn Wood",
-      "advancements.elf_friend.descr": "Enter a Elvish Forest.",
       "block.the_hobbit_mod.mallorn_pressure_plate": "Mallorn Pressure Plate",
+      "advancements.elf_friend.descr": "Enter a Elvish Forest.",
       "subtitles.smaug": "",
       "item.the_hobbit_mod.burning_magma_shard": "Burning Magma Shard",
       "block.the_hobbit_mod.mallorn_fence": "Mallorn Fence",
@@ -1733,8 +1762,8 @@
       "subtitles.lothlorien": "",
       "biome.the_hobbit_mod.dead_marshes": "Dead Marshes",
       "block.the_hobbit_mod.mallorn_wood": "Mallorn Wood",
-      "block.the_lotr_mod.deepslate_mithril_ore": "Mithril Ore",
       "item.the_hobbit_mod.heated_mithril": "Heated Mithril",
+      "block.the_lotr_mod.deepslate_mithril_ore": "Mithril Ore",
       "item_group.the_lotr_mod.the_hobbit_mod": "The Hobbit Mod",
       "item.the_hobbit_mod.orc_spawn_egg": "Orc Spawn Egg",
       "item.the_lotr_mod.mithril_tools_shovel": "Mithril Shovel",
@@ -1750,6 +1779,7 @@
       "entity.the_lotr_mod.nazgul": "Nazgul",
       "subtitles.the_adventure_begins": "",
       "item.the_lotr_mod.misty_mountains": "Misty Mountains",
+      "gui.the_lotr_mod.forger_gui.button_melt": "Melt",
       "item.the_lotr_mod.heated_mithril": "Heated Mithril",
       "subtitles.mistymountains": "",
       "item.the_lotr_mod.seven_rings": "The Seven Rings",
@@ -1818,7 +1848,7 @@
       "block.the_lotr_mod.mallorn_log": "Mallorn Log",
       "item.the_hobbit_mod.mithril_ingot": "Mithril Ingot",
       "subtitles.gollum": "",
-      "block.the_lotr_mod.forger": "Forger",
+      "block.the_lotr_mod.forger": "The Forger",
       "advancements.the_quiet_folk.descr": "Enter a Hobbit Plains biome.",
       "advancements.elf_friend.title": "Elf-Friend",
       "item.the_hobbit_mod.three_rings": "The Three Rings",

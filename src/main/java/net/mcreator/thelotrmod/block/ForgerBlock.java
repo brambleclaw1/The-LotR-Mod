@@ -46,7 +46,7 @@ public class ForgerBlock extends Block implements EntityBlock {
 			NetworkHooks.openScreen(player, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Forger");
+					return Component.literal("The Forger");
 				}
 
 				@Override

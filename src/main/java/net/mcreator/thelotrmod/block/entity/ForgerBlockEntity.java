@@ -94,7 +94,7 @@ public class ForgerBlockEntity extends RandomizableContainerBlockEntity implemen
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Forger");
+		return Component.literal("The Forger");
 	}
 
 	@Override

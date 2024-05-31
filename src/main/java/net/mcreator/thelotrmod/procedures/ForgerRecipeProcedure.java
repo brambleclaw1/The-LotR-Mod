@@ -11,7 +11,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.thelotrmod.init.TheLotrModModItems;
-import net.mcreator.thelotrmod.init.TheLotrModModBlocks;
 
 import java.util.function.Supplier;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -35,8 +34,8 @@ public class ForgerRecipeProcedure {
 						return _retval.get();
 					}
 				}.getAmount(world, BlockPos.containing(x, y, z), 3) == 0
-						|| (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY).getItem() == TheLotrModModBlocks.FORGER
-								.get().asItem())) {
+						|| (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
+								.getItem() == TheLotrModModItems.MITHRIL_INGOT.get())) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				((Slot) _slots.get(0)).remove(1);
 				_player.containerMenu.broadcastChanges();
@@ -50,7 +49,7 @@ public class ForgerRecipeProcedure {
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(TheLotrModModBlocks.FORGER.get()).copy();
+				ItemStack _setstack = new ItemStack(TheLotrModModItems.MITHRIL_INGOT.get()).copy();
 				_setstack.setCount((int) (new Object() {
 					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 						AtomicInteger _retval = new AtomicInteger(0);

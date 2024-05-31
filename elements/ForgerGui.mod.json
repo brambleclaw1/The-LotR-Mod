@@ -36,7 +36,7 @@
             "fixedValue": "Forger"
           },
           "color": {
-            "value": -16777216,
+            "value": -13421773,
             "falpha": 0.0
           },
           "x": 199,
@@ -89,6 +89,30 @@
           "dropItemsWhenNotBound": true,
           "x": 276,
           "y": 72
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_melt",
+          "text": "Melt",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "ForgerRecipe"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 191,
+          "y": 95
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow.png",
+          "use1Xscale": false,
+          "x": 241,
+          "y": 73
         }
       }
     ],
