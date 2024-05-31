@@ -12,6 +12,31 @@
         "state": {
           "Name": "the_lotr_mod:archaic_gold"
         }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate",
+            "Properties": {
+              "axis": "y"
+            }
+          }
+        },
+        "state": {
+          "Name": "the_lotr_mod:archaic_gold"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:cobbled_deepslate"
+          }
+        },
+        "state": {
+          "Name": "the_lotr_mod:archaic_gold"
+        }
       }
     ]
   }

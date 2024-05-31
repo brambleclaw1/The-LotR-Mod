@@ -3,6 +3,12 @@
   "temperature": 0.5,
   "downfall": 0.5,
   "effects": {
+    "music": {
+      "sound": "the_lotr_mod:smaug",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": true
+    },
     "foliage_color": -3355444,
     "grass_color": -3355444,
     "sky_color": 7972607,

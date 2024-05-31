@@ -54,5 +54,13 @@
         "stream": false
       }
     ]
+  },
+  "evenstar": {
+    "sounds": [
+      {
+        "name": "the_lotr_mod:evenstar",
+        "stream": true
+      }
+    ]
   }
 }

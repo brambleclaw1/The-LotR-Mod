@@ -22,4 +22,5 @@ public class TheLotrModModSounds {
 	public static final RegistryObject<SoundEvent> NAZGUL_DEAD = REGISTRY.register("nazgul_dead", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("the_lotr_mod", "nazgul_dead")));
 	public static final RegistryObject<SoundEvent> GOLLUM = REGISTRY.register("gollum", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("the_lotr_mod", "gollum")));
 	public static final RegistryObject<SoundEvent> RING = REGISTRY.register("ring", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("the_lotr_mod", "ring")));
+	public static final RegistryObject<SoundEvent> EVENSTAR = REGISTRY.register("evenstar", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("the_lotr_mod", "evenstar")));
 }
