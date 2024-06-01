@@ -24,14 +24,6 @@
       "value": -26368,
       "falpha": 0.0
     },
-    "waterColor": {
-      "value": -65536,
-      "falpha": 0.0
-    },
-    "waterFogColor": {
-      "value": -65536,
-      "falpha": 0.0
-    },
     "ambientSound": {
       "value": ""
     },
@@ -39,7 +31,7 @@
       "value": ""
     },
     "music": {
-      "value": "CUSTOM:gollum"
+      "value": ""
     },
     "moodSound": {
       "value": ""
@@ -115,6 +107,16 @@
     "spawnBastionRemnant": true,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
-    "spawnEntries": []
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:Orc"
+        },
+        "minGroup": 1,
+        "maxGroup": 4,
+        "weight": 100,
+        "spawnType": "monster"
+      }
+    ]
   }
 }

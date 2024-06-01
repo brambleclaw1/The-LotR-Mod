@@ -17,11 +17,11 @@
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -3381760,
+      "value": -26368,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -39424,
+      "value": -26368,
       "falpha": 0.0
     },
     "waterColor": {
@@ -80,10 +80,10 @@
     "treeType": 1,
     "minHeight": 10,
     "treeStem": {
-      "value": "Blocks.LOG#0"
+      "value": "CUSTOM:MallornLog"
     },
     "treeBranch": {
-      "value": "Blocks.LEAVES#0"
+      "value": "CUSTOM:MallornLeaves"
     },
     "treeVines": {
       "value": ""

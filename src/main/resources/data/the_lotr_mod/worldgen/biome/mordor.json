@@ -3,21 +3,22 @@
   "temperature": 2,
   "downfall": 0,
   "effects": {
-    "music": {
-      "sound": "the_lotr_mod:gollum",
-      "min_delay": 12000,
-      "max_delay": 24000,
-      "replace_current_music": true
-    },
     "foliage_color": -26368,
     "grass_color": -3381760,
     "sky_color": -3381760,
     "fog_color": -3381760,
-    "water_color": -65536,
-    "water_fog_color": -65536
+    "water_color": 4159204,
+    "water_fog_color": 329011
   },
   "spawners": {
-    "monster": [],
+    "monster": [
+      {
+        "type": "the_lotr_mod:orc",
+        "weight": 100,
+        "minCount": 1,
+        "maxCount": 4
+      }
+    ],
     "creature": [],
     "ambient": [],
     "axolotls": [],

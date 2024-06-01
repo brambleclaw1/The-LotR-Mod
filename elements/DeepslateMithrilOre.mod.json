@@ -122,7 +122,7 @@
     "generateFeature": true,
     "restrictionBiomes": [
       {
-        "value": "#the_lotr_mod:is_lotr_biome"
+        "value": "#the_lotr_mod:middle_earth"
       }
     ],
     "blocksToReplace": [
