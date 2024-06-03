@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#the_lotr_mod:is_lotr_biome",
+  "features": "the_hobbit_mod:burning_magma",
+  "step": "underground_ores"
+}

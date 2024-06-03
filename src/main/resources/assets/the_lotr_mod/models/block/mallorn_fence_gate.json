@@ -1,7 +1,0 @@
-{
-  "parent": "block/template_fence_gate",
-  "textures": {
-    "texture": "the_lotr_mod:block/mallorn_planks"
-  },
-  "render_type": "solid"
-}

@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "the_lotr_mod:mallorn_planks",
-    "the_lotr_mod:mallorn_log",
-    "the_lotr_mod:mallorn_wood"
+    "the_hobbit_mod:mallorn_planks",
+    "the_hobbit_mod:mallorn_log",
+    "the_hobbit_mod:mallorn_wood"
   ]
 }

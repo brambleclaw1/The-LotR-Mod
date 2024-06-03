@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "the_hobbit_mod:mordor",
+  "spawners": {
+    "type": "the_hobbit_mod:orc",
+    "weight": 60,
+    "minCount": 1,
+    "maxCount": 4
+  }
+}

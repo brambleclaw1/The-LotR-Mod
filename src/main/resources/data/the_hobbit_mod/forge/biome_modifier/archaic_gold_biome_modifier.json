@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "the_hobbit_mod:weather_hills",
+    "badlands"
+  ],
+  "features": "the_hobbit_mod:archaic_gold",
+  "step": "underground_ores"
+}

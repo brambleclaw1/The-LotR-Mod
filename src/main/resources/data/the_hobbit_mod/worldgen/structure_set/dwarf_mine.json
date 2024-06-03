@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "the_hobbit_mod:dwarf_mine",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 20,
+    "separation": 16,
+    "salt": 49463281
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "the_hobbit_mod:misty_mountain",
+  "features": "the_hobbit_mod:mithril_ore",
+  "step": "underground_ores"
+}
