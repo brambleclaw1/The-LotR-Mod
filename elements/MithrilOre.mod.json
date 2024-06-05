@@ -134,12 +134,15 @@
       },
       {
         "value": "Blocks.COBBLED_DEEPSLATE"
+      },
+      {
+        "value": "Blocks.STONE#0"
       }
     ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 15,
     "frequencyOnChunk": 12,
     "minGenerateHeight": -64,
-    "maxGenerateHeight": 256
+    "maxGenerateHeight": 64
   }
 }

@@ -37,6 +37,17 @@
         "state": {
           "Name": "the_hobbit_mod:mithril_ore"
         }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:stone"
+          }
+        },
+        "state": {
+          "Name": "the_hobbit_mod:mithril_ore"
+        }
       }
     ]
   }
