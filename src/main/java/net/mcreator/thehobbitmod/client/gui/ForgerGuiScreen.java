@@ -66,11 +66,6 @@ public class ForgerGuiScreen extends AbstractContainerScreen<ForgerGuiMenu> {
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.the_hobbit_mod.forger_gui.label_forger"), 73, 14, -13421773, false);
 	}

@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "livingentity",
   "definition": {
     "mobName": "Orc",
@@ -35,9 +35,11 @@
       "value": -16777216,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:TheHobbitMod"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TheHobbitMod"
+      }
+    ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -139,6 +141,15 @@
         "value": "CUSTOM:Mordor"
       }
     ],
-    "spawnInDungeons": true
+    "spawnInDungeons": true,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
   }
 }

@@ -25,7 +25,7 @@ public class Mithril_ToolsHoeItem extends HoeItem {
 			}
 
 			public int getLevel() {
-				return 18;
+				return 4;
 			}
 
 			public int getEnchantmentValue() {

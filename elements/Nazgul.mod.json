@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "livingentity",
   "definition": {
     "mobName": "Nazgul",
@@ -23,9 +23,11 @@
       "value": -13421773,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:TheHobbitMod"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TheHobbitMod"
+      }
+    ],
     "isBoss": false,
     "bossBarColor": "RED",
     "bossBarType": "PROGRESS",
@@ -120,6 +122,15 @@
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 1,
     "restrictionBiomes": [],
-    "spawnInDungeons": false
+    "spawnInDungeons": false,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
   }
 }

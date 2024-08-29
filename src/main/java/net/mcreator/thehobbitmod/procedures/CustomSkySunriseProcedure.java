@@ -2,10 +2,11 @@ package net.mcreator.thehobbitmod.procedures;
 
 import org.joml.Matrix4f;
 
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.client.DimensionSpecialEffectsManager;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
@@ -16,14 +17,16 @@ import net.minecraft.util.Mth;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.renderer.FogRenderer;
+import net.minecraft.client.renderer.DimensionSpecialEffects;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.Minecraft;
 
 import javax.annotation.Nullable;
 
-import java.util.regex.Pattern;
-import java.util.function.Consumer;
-import java.util.List;
+import java.util.function.Predicate;
+import java.util.Set;
+
+import java.lang.reflect.Field;
 
 import com.mojang.blaze3d.vertex.VertexFormat;
 import com.mojang.blaze3d.vertex.VertexBuffer;
@@ -35,11 +38,8 @@ import com.mojang.blaze3d.vertex.BufferBuilder;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.platform.GlStateManager;
 
-@Mod.EventBusSubscriber(value = Dist.CLIENT)
+@Mod.EventBusSubscriber(value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CustomSkySunriseProcedure {
-	private static Pattern pattern = Pattern.compile(".*\\.procedures\\..*Procedure\\$CustomDimensionEffects");
-	private static List<Consumer<Object[]>> customSky = null;
-	private static Class<?> effects = null;
 	private static int ticks = 0;
 	private static float partialTick = 0.0F;
 	private static PoseStack poseStack = null;
@@ -51,6 +51,23 @@ public class CustomSkySunriseProcedure {
 	private static VertexBuffer starBuffer = null;
 	private static int amount = 0;
 	private static int seed = 0;
+	private static final Predicate<Object[]> PREDICATE = params -> {
+		ticks = (Integer) params[1];
+		partialTick = (Float) params[2];
+		poseStack = (PoseStack) params[3];
+		projectionMatrix = (Matrix4f) params[5];
+		setupFog = (Runnable) params[7];
+		FogRenderer.levelFogColor();
+		setupFog.run();
+		Minecraft minecraft = Minecraft.getInstance();
+		Entity entity = minecraft.gameRenderer.getMainCamera().getEntity();
+		if (entity != null) {
+			ClientLevel level = minecraft.level;
+			Vec3 pos = entity.getPosition(partialTick);
+			execute(null, level);
+		}
+		return false;
+	};
 
 	public static void renderAbyss(int color, boolean constant) {
 		Minecraft minecraft = Minecraft.getInstance();
@@ -404,6 +421,7 @@ public class CustomSkySunriseProcedure {
 			int blue = color & 255;
 			int alpha = (int) ((color >>> 24) * rawColor[3]);
 			Matrix4f matrix4f = poseStack.last().pose();
+			RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
 			RenderSystem.setShader(GameRenderer::getPositionColorShader);
 			BufferBuilder bufferBuilder = Tesselator.getInstance().getBuilder();
 			bufferBuilder.begin(VertexFormat.Mode.TRIANGLE_FAN, DefaultVertexFormat.POSITION_COLOR);
@@ -451,46 +469,14 @@ public class CustomSkySunriseProcedure {
 	}
 
 	@SubscribeEvent
-	public static void renderSky(TickEvent.RenderTickEvent event) {
-		if (event.phase != TickEvent.Phase.START)
-			return;
+	public static void skySetup(FMLClientSetupEvent event) {
 		try {
-			Class<?> effects = Minecraft.getInstance().level.effects().getClass().getSuperclass();
-			if (!pattern.matcher(effects.getName()).find())
-				return;
-			if (effects != CustomSkySunriseProcedure.effects) {
-				CustomSkySunriseProcedure.effects = effects;
-				CustomSkySunriseProcedure.customSky = (List<Consumer<Object[]>>) effects.getField("customSky").get(null);
+			Field field = DimensionSpecialEffectsManager.class.getDeclaredField("EFFECTS");
+			field.setAccessible(true);
+			for (DimensionSpecialEffects dimensionSpecialEffects : ((com.google.common.collect.ImmutableMap<ResourceLocation, DimensionSpecialEffects>) field.get(null)).values()) {
+				Class<?> effects = dimensionSpecialEffects.getClass();
+				((Set<Predicate<Object[]>>) effects.getField("CUSTOM_SKY").get(null)).add(PREDICATE);
 			}
-			CustomSkySunriseProcedure.customSky.add(new Consumer<Object[]>() {
-				@Override
-				public void accept(Object[] params) {
-					ticks = (Integer) params[1];
-					partialTick = (Float) params[2];
-					poseStack = (PoseStack) params[3];
-					projectionMatrix = (Matrix4f) params[5];
-					setupFog = (Runnable) params[7];
-					FogRenderer.levelFogColor();
-					setupFog.run();
-					Minecraft minecraft = Minecraft.getInstance();
-					ClientLevel level = minecraft.level;
-					Entity entity = minecraft.gameRenderer.getMainCamera().getEntity();
-					if (entity != null) {
-						Vec3 pos = entity.getPosition(partialTick);
-						RenderSystem.depthMask(false);
-						RenderSystem.enableBlend();
-						RenderSystem.defaultBlendFunc();
-						RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
-						execute(null, level);
-					}
-					RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
-					RenderSystem.disableBlend();
-					RenderSystem.enableCull();
-					RenderSystem.enableDepthTest();
-					RenderSystem.depthMask(true);
-					RenderSystem.colorMask(true, true, true, true);
-				}
-			});
 		} catch (Exception e) {
 		}
 	}
@@ -504,25 +490,21 @@ public class CustomSkySunriseProcedure {
 		worldtime = world.dayTime();
 		if (worldtime > 23000) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation(("the_lotr_mod" + ":textures/" + "sunrise" + ".png")));
-			RenderSystem.bindTexture(RenderSystem.getShaderTexture(0));
-			renderSkybox(0, 0, 0, (int) (255 << 24 | 255 << 16 | 255 << 8 | 255), true);
+			renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
 		} else {
 			if (worldtime > 13000) {
 				if (worldtime < 23000) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation(("the_lotr_mod" + ":textures/" + "night" + ".png")));
-					RenderSystem.bindTexture(RenderSystem.getShaderTexture(0));
-					renderSkybox(0, 0, 0, (int) (255 << 24 | 255 << 16 | 255 << 8 | 255), true);
+					renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
 				} else {
 					if (worldtime > 12000) {
 						if (worldtime < 13000) {
 							RenderSystem.setShaderTexture(0, new ResourceLocation(("the_lotr_mod" + ":textures/" + "sunset" + ".png")));
-							RenderSystem.bindTexture(RenderSystem.getShaderTexture(0));
-							renderSkybox(0, 0, 0, (int) (255 << 24 | 255 << 16 | 255 << 8 | 255), true);
+							renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
 						} else {
 							if (worldtime < 12000) {
 								RenderSystem.setShaderTexture(0, new ResourceLocation(("the_lotr_mod" + ":textures/" + "noon" + ".png")));
-								RenderSystem.bindTexture(RenderSystem.getShaderTexture(0));
-								renderSkybox(0, 0, 0, (int) (255 << 24 | 255 << 16 | 255 << 8 | 255), true);
+								renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
 							}
 						}
 					}

@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "structure",
   "definition": {
     "structure": "orc_tunnel",
@@ -16,9 +16,13 @@
         "value": "#the_lotr_mod:is_lotr_biome"
       }
     ],
-    "surfaceDetectionType": "MOTION_BLOCKING",
     "terrainAdaptation": "bury",
     "generationStep": "UNDERGROUND_STRUCTURES",
+    "surfaceDetectionType": "MOTION_BLOCKING",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
     "size": 1,
     "maxDistanceFromCenter": 64,
     "jigsawPools": []

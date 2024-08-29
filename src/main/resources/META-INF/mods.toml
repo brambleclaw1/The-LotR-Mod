@@ -19,8 +19,11 @@ description="Introduces the Lord of the Rings universe into Minecraft."
     modId="minecraft"
     mandatory=true
     versionRange="[1.20.1]"
-    ordering="NONE"
+    ordering="AFTER"
     side="BOTH"
 
 
 
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

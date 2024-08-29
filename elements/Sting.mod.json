@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -12,18 +12,20 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:TheHobbitMod"
-    },
-    "harvestLevel": 6,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TheHobbitMod"
+      }
+    ],
     "efficiency": 14.0,
     "attackSpeed": 3.0,
     "enchantability": 28,
     "damageVsEntity": 26.0,
     "usageCount": 4065,
-    "blocksAffected": [],
     "repairItems": [],
     "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

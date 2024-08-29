@@ -14,7 +14,7 @@ import net.minecraft.client.renderer.DimensionSpecialEffects;
 @Mod.EventBusSubscriber
 public class MiddleEarthDimension {
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-	public static class DimensionSpecialEffectsHandler {
+	public static class MiddleEarthSpecialEffectsHandler {
 		@SubscribeEvent
 		@OnlyIn(Dist.CLIENT)
 		public static void registerDimensionSpecialEffects(RegisterDimensionSpecialEffectsEvent event) {
