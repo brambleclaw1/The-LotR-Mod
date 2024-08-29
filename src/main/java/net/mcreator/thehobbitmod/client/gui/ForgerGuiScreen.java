@@ -53,6 +53,10 @@ public class ForgerGuiScreen extends AbstractContainerScreen<ForgerGuiMenu> {
 
 		guiGraphics.blit(new ResourceLocation("the_hobbit_mod:textures/screens/arrow.png"), this.leftPos + 115, this.topPos + 36, 0, 0, 16, 16, 16, 16);
 
+		guiGraphics.blit(new ResourceLocation("the_hobbit_mod:textures/screens/plus.png"), this.leftPos + 26, this.topPos + 35, 0, 0, 16, 16, 16, 16);
+
+		guiGraphics.blit(new ResourceLocation("the_hobbit_mod:textures/screens/plus.png"), this.leftPos + 62, this.topPos + 34, 0, 0, 16, 16, 16, 16);
+
 		RenderSystem.disableBlend();
 	}
 

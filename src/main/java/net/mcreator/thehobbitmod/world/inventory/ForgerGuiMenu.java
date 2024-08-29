@@ -83,7 +83,7 @@ public class ForgerGuiMenu extends AbstractContainerMenu implements Supplier<Map
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 44, 35) {
 			private final int slot = 1;
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 80, 36) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 80, 35) {
 			private final int slot = 2;
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 151, 36) {
