@@ -25,7 +25,7 @@ public class Mithril_ToolsShovelItem extends ShovelItem {
 			}
 
 			public int getLevel() {
-				return 18;
+				return 4;
 			}
 
 			public int getEnchantmentValue() {

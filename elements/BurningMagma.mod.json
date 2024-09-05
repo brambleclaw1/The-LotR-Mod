@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "block",
   "definition": {
     "texture": "burning_magma",
@@ -41,9 +41,11 @@
     "resistance": 100000.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "CUSTOM:TheHobbitMod"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TheHobbitMod"
+      }
+    ],
     "destroyTool": "pickaxe",
     "customDrop": {
       "value": "CUSTOM:BurningMagmaShard"
@@ -100,7 +102,7 @@
     },
     "luminance": 8,
     "unbreakable": false,
-    "breakHarvestLevel": 3,
+    "vanillaToolTier": "DIAMOND",
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

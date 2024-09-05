@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Pickaxe",
@@ -12,22 +12,24 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "TOOLS"
-    },
-    "harvestLevel": 18,
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      }
+    ],
     "efficiency": 22.0,
     "attackSpeed": 1.0,
     "enchantability": 126,
     "damageVsEntity": 18.0,
     "usageCount": 5419,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "CUSTOM:MithrilIngot"
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

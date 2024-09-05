@@ -3,7 +3,6 @@
     {
       "name": "TheHobbitMod",
       "type": "tab",
-      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_hobbit_mod",
@@ -14,7 +13,6 @@
     {
       "name": "MithrilIngot",
       "type": "item",
-      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mithril_ingot",
@@ -29,7 +27,6 @@
     {
       "name": "TheOneRing",
       "type": "item",
-      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_one_ring",
@@ -44,7 +41,6 @@
     {
       "name": "HeatedMithril",
       "type": "item",
-      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "heated_mithril",
@@ -59,7 +55,6 @@
     {
       "name": "RawMithril",
       "type": "item",
-      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "raw_mithril",
@@ -74,7 +69,6 @@
     {
       "name": "HeatedMithrilRecipe",
       "type": "recipe",
-      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "heated_mithril_recipe",
@@ -88,7 +82,6 @@
     {
       "name": "BurningMagmaShard",
       "type": "item",
-      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "burning_magma_shard",
@@ -103,7 +96,6 @@
     {
       "name": "BurningMagma",
       "type": "block",
-      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "burning_magma",
@@ -124,7 +116,6 @@
     {
       "name": "MithrilIngotRecipe",
       "type": "recipe",
-      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mithril_ingot_recipe",
@@ -138,7 +129,6 @@
     {
       "name": "Sting",
       "type": "tool",
-      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sting",
@@ -153,7 +143,6 @@
     {
       "name": "Glamdring",
       "type": "tool",
-      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glamdring",
@@ -168,7 +157,6 @@
     {
       "name": "Orcrist",
       "type": "tool",
-      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orcrist",
@@ -183,7 +171,6 @@
     {
       "name": "TheOneRingItemInHandTick",
       "type": "procedure",
-      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_one_ring_item_in_hand_tick",
@@ -203,7 +190,6 @@
     {
       "name": "MithrilOre",
       "type": "block",
-      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mithril_ore",
@@ -224,7 +210,6 @@
     {
       "name": "PipeRightclicked",
       "type": "procedure",
-      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pipe_rightclicked",
@@ -244,7 +229,6 @@
     {
       "name": "Pipe",
       "type": "item",
-      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pipe",
@@ -259,7 +243,6 @@
     {
       "name": "MithrilArmor",
       "type": "armor",
-      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mithril_armor",
@@ -281,7 +264,6 @@
     {
       "name": "MithrilArmorBodyTickEvent",
       "type": "procedure",
-      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mithril_armor_body_tick_event",
@@ -301,7 +283,6 @@
     {
       "name": "MithrilHelmetRecipe",
       "type": "recipe",
-      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mithril_helmet_recipe",
@@ -315,7 +296,6 @@
     {
       "name": "MithrilChestplateRecipe",
       "type": "recipe",
-      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mithril_chestplate_recipe",
@@ -329,7 +309,6 @@
     {
       "name": "MithrilLeggingsRecipe",
       "type": "recipe",
-      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mithril_leggings_recipe",
@@ -343,7 +322,6 @@
     {
       "name": "MithrilBootsRecipe",
       "type": "recipe",
-      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mithril_boots_recipe",
@@ -357,7 +335,6 @@
     {
       "name": "Orc",
       "type": "livingentity",
-      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orc",
@@ -374,7 +351,6 @@
     {
       "name": "OrcLootTable",
       "type": "loottable",
-      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orc_loot_table",
@@ -388,7 +364,6 @@
     {
       "name": "MistyMountains",
       "type": "musicdisc",
-      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "misty_mountains",
@@ -403,7 +378,6 @@
     {
       "name": "ElvenForest",
       "type": "biome",
-      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "elven_forest",
@@ -419,7 +393,6 @@
     {
       "name": "PipeRecipe",
       "type": "recipe",
-      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pipe_recipe",
@@ -433,7 +406,6 @@
     {
       "name": "MistyMountainsRecipe",
       "type": "recipe",
-      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "misty_mountains_recipe",
@@ -447,7 +419,6 @@
     {
       "name": "TheHobbitModInstall",
       "type": "achievement",
-      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_hobbit_mod_install",
@@ -461,7 +432,6 @@
     {
       "name": "Mithril",
       "type": "achievement",
-      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mithril",
@@ -475,7 +445,6 @@
     {
       "name": "MyPrecious",
       "type": "achievement",
-      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "my_precious",
@@ -489,7 +458,6 @@
     {
       "name": "ItsWorthIsGreater",
       "type": "achievement",
-      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "its_worth_is_greater",
@@ -503,7 +471,6 @@
     {
       "name": "NineRings",
       "type": "item",
-      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nine_rings",
@@ -518,7 +485,6 @@
     {
       "name": "Nazgul",
       "type": "livingentity",
-      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nazgul",
@@ -534,7 +500,6 @@
     {
       "name": "Wraithing",
       "type": "procedure",
-      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wraithing",
@@ -554,7 +519,6 @@
     {
       "name": "DolGuldurLoot",
       "type": "loottable",
-      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dol_guldur_loot",
@@ -568,7 +532,6 @@
     {
       "name": "Mordor",
       "type": "biome",
-      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mordor",
@@ -582,7 +545,6 @@
     {
       "name": "SevenRings",
       "type": "item",
-      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "registry_name": "seven_rings",
@@ -597,7 +559,6 @@
     {
       "name": "SevenRingsItemInHandTick",
       "type": "procedure",
-      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "registry_name": "seven_rings_item_in_hand_tick",
@@ -621,7 +582,6 @@
     {
       "name": "DwarfMineLoot",
       "type": "loottable",
-      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dwarf_mine_loot",
@@ -635,7 +595,6 @@
     {
       "name": "OneDoesNotSimply",
       "type": "achievement",
-      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "registry_name": "one_does_not_simply",
@@ -649,7 +608,6 @@
     {
       "name": "TheBaneOfMen",
       "type": "achievement",
-      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_bane_of_men",
@@ -663,7 +621,6 @@
     {
       "name": "ThreeRings",
       "type": "item",
-      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "registry_name": "three_rings",
@@ -678,7 +635,6 @@
     {
       "name": "ThreeRingsItemInHandTick",
       "type": "procedure",
-      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "three_rings_item_in_hand_tick",
@@ -698,7 +654,6 @@
     {
       "name": "ThreeRingsRecipe",
       "type": "recipe",
-      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "registry_name": "three_rings_recipe",
@@ -712,7 +667,6 @@
     {
       "name": "MiddleEarth",
       "type": "dimension",
-      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "registry_name": "middle_earth",
@@ -727,7 +681,6 @@
     {
       "name": "TarnishedRing",
       "type": "item",
-      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tarnished_ring",
@@ -742,7 +695,6 @@
     {
       "name": "TarnishedRingRightclicked",
       "type": "procedure",
-      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tarnished_ring_rightclicked",
@@ -762,7 +714,6 @@
     {
       "name": "HobbitPlains",
       "type": "biome",
-      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hobbit_plains",
@@ -778,7 +729,6 @@
     {
       "name": "TheQuietFolk",
       "type": "achievement",
-      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_quiet_folk",
@@ -792,7 +742,6 @@
     {
       "name": "ElfFriend",
       "type": "achievement",
-      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "registry_name": "elf_friend",
@@ -806,7 +755,6 @@
     {
       "name": "MallornWood",
       "type": "block",
-      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mallorn_wood",
@@ -824,7 +772,6 @@
     {
       "name": "MallornLog",
       "type": "block",
-      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mallorn_log",
@@ -842,7 +789,6 @@
     {
       "name": "MallornPlanks",
       "type": "block",
-      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mallorn_planks",
@@ -860,7 +806,6 @@
     {
       "name": "MallornLeaves",
       "type": "block",
-      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mallorn_leaves",
@@ -878,7 +823,6 @@
     {
       "name": "MallornStairs",
       "type": "block",
-      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mallorn_stairs",
@@ -898,7 +842,6 @@
     {
       "name": "MallornSlab",
       "type": "block",
-      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mallorn_slab",
@@ -918,7 +861,6 @@
     {
       "name": "MallornFence",
       "type": "block",
-      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mallorn_fence",
@@ -938,7 +880,6 @@
     {
       "name": "MallornFenceGate",
       "type": "block",
-      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mallorn_fence_gate",
@@ -959,7 +900,6 @@
     {
       "name": "MallornPressurePlate",
       "type": "block",
-      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mallorn_pressure_plate",
@@ -978,7 +918,6 @@
     {
       "name": "MallornButton",
       "type": "block",
-      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mallorn_button",
@@ -998,7 +937,6 @@
     {
       "name": "MallornWoodRecipe",
       "type": "recipe",
-      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mallorn_wood_recipe",
@@ -1012,7 +950,6 @@
     {
       "name": "MallornPlanksRecipe",
       "type": "recipe",
-      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mallorn_planks_recipe",
@@ -1026,7 +963,6 @@
     {
       "name": "MallornStairsRecipe",
       "type": "recipe",
-      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mallorn_stairs_recipe",
@@ -1040,7 +976,6 @@
     {
       "name": "MallornSlabRecipe",
       "type": "recipe",
-      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mallorn_slab_recipe",
@@ -1054,7 +989,6 @@
     {
       "name": "MallornFenceRecipe",
       "type": "recipe",
-      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mallorn_fence_recipe",
@@ -1068,7 +1002,6 @@
     {
       "name": "MallornFenceGateRecipe",
       "type": "recipe",
-      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mallorn_fence_gate_recipe",
@@ -1082,7 +1015,6 @@
     {
       "name": "MallornPressurePlateRecipe",
       "type": "recipe",
-      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mallorn_pressure_plate_recipe",
@@ -1096,7 +1028,6 @@
     {
       "name": "MallornButtonRecipe",
       "type": "recipe",
-      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mallorn_button_recipe",
@@ -1110,7 +1041,6 @@
     {
       "name": "MallornStickRecipe",
       "type": "recipe",
-      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mallorn_stick_recipe",
@@ -1124,7 +1054,6 @@
     {
       "name": "Mithril_ToolsPickaxe",
       "type": "tool",
-      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mithril_tools_pickaxe",
@@ -1139,7 +1068,6 @@
     {
       "name": "Mithril_ToolsAxe",
       "type": "tool",
-      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mithril_tools_axe",
@@ -1154,7 +1082,6 @@
     {
       "name": "Mithril_ToolsSword",
       "type": "tool",
-      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mithril_tools_sword",
@@ -1169,7 +1096,6 @@
     {
       "name": "Mithril_ToolsShovel",
       "type": "tool",
-      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mithril_tools_shovel",
@@ -1184,7 +1110,6 @@
     {
       "name": "Mithril_ToolsHoe",
       "type": "tool",
-      "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mithril_tools_hoe",
@@ -1199,7 +1124,6 @@
     {
       "name": "Mithril_ToolsPickaxeRecipe",
       "type": "recipe",
-      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mithril_tools_pickaxe_recipe",
@@ -1213,7 +1137,6 @@
     {
       "name": "Mithril_ToolsAxeRecipe",
       "type": "recipe",
-      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mithril_tools_axe_recipe",
@@ -1227,7 +1150,6 @@
     {
       "name": "Mithril_ToolsSwordRecipe",
       "type": "recipe",
-      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mithril_tools_sword_recipe",
@@ -1241,7 +1163,6 @@
     {
       "name": "Mithril_ToolsShovelRecipe",
       "type": "recipe",
-      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mithril_tools_shovel_recipe",
@@ -1255,7 +1176,6 @@
     {
       "name": "Mithril_ToolsHoeRecipe",
       "type": "recipe",
-      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mithril_tools_hoe_recipe",
@@ -1269,7 +1189,6 @@
     {
       "name": "WeatherHills",
       "type": "biome",
-      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "registry_name": "weather_hills",
@@ -1283,7 +1202,6 @@
     {
       "name": "MallornTreeChest",
       "type": "loottable",
-      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mallorn_tree_chest",
@@ -1297,7 +1215,6 @@
     {
       "name": "Forger",
       "type": "block",
-      "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "registry_name": "forger",
@@ -1316,7 +1233,6 @@
     {
       "name": "DeadMarshes",
       "type": "biome",
-      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dead_marshes",
@@ -1330,7 +1246,6 @@
     {
       "name": "MistyMountain",
       "type": "biome",
-      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "registry_name": "misty_mountain",
@@ -1344,7 +1259,6 @@
     {
       "name": "GiantMallornTreeFeature",
       "type": "feature",
-      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "registry_name": "giant_mallorn_tree_feature",
@@ -1361,7 +1275,6 @@
     {
       "name": "CustomSkySunrise",
       "type": "procedure",
-      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_sky_sunrise",
@@ -1381,7 +1294,6 @@
     {
       "name": "OrcTunnel",
       "type": "structure",
-      "sortid": 107,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orc_tunnel",
@@ -1397,7 +1309,6 @@
     {
       "name": "DwarfMine",
       "type": "structure",
-      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dwarf_mine",
@@ -1413,7 +1324,6 @@
     {
       "name": "DolGuldur",
       "type": "structure",
-      "sortid": 110,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dol_guldur",
@@ -1429,7 +1339,6 @@
     {
       "name": "DeepslateMithrilOre",
       "type": "block",
-      "sortid": 111,
       "compiles": true,
       "locked_code": false,
       "registry_name": "deepslate_mithril_ore",
@@ -1450,7 +1359,6 @@
     {
       "name": "ForgerGui",
       "type": "gui",
-      "sortid": 112,
       "compiles": true,
       "locked_code": false,
       "registry_name": "forger_gui",
@@ -1466,7 +1374,6 @@
     {
       "name": "ArchaicGoldIngot",
       "type": "item",
-      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "registry_name": "archaic_gold_ingot",
@@ -1481,7 +1388,6 @@
     {
       "name": "RawArchaicGold",
       "type": "item",
-      "sortid": 114,
       "compiles": true,
       "locked_code": false,
       "registry_name": "raw_archaic_gold",
@@ -1496,7 +1402,6 @@
     {
       "name": "ArchaicGold",
       "type": "block",
-      "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "registry_name": "archaic_gold",
@@ -1517,7 +1422,6 @@
     {
       "name": "ArchaicIngotRecipe",
       "type": "recipe",
-      "sortid": 116,
       "compiles": true,
       "locked_code": false,
       "registry_name": "archaic_ingot_recipe",
@@ -1531,7 +1435,6 @@
     {
       "name": "ForgerRecipe",
       "type": "procedure",
-      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "registry_name": "forger_recipe",
@@ -1567,7 +1470,6 @@
     {
       "name": "TarnishedRingRecipe",
       "type": "recipe",
-      "sortid": 118,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tarnished_ring_recipe",
@@ -1581,7 +1483,6 @@
     {
       "name": "TheForgerRecipe",
       "type": "recipe",
-      "sortid": 119,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_forger_recipe",
@@ -1661,13 +1562,43 @@
     }
   ],
   "tag_elements": {
-    "ITEMS:forge:mallorn_log": [
-      "CUSTOM:MallornWood",
-      "CUSTOM:MallornLog"
-    ],
     "BIOMES:minecraft:has_structure/stronghold": [
       "~CUSTOM:Mordor",
       "~CUSTOM:ElvenForest"
+    ],
+    "ITEMS:minecraft:hoes": [
+      "~CUSTOM:Mithril_ToolsHoe"
+    ],
+    "BIOMES:minecraft:has_structure/woodland_mansion": [
+      "~CUSTOM:Mordor"
+    ],
+    "BLOCKS:minecraft:logs": [
+      "CUSTOM:MallornLog"
+    ],
+    "BLOCKS:minecraft:leaves": [
+      "~CUSTOM:MallornLeaves"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:MallornSlab"
+    ],
+    "BIOMES:minecraft:has_structure/bastion_remnant": [
+      "~CUSTOM:Mordor"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:Mithril_ToolsAxe"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:MallornStairs"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:Mithril_ToolsSword",
+      "~CUSTOM:Orcrist",
+      "~CUSTOM:Glamdring",
+      "~CUSTOM:Sting"
+    ],
+    "ITEMS:forge:mallorn_log": [
+      "CUSTOM:MallornWood",
+      "CUSTOM:MallornLog"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
       "~CUSTOM:DeepslateMithrilOre",
@@ -1688,14 +1619,14 @@
       "CUSTOM:Mordor",
       "CUSTOM:WeatherHills"
     ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:Mithril_ToolsPickaxe"
+    ],
     "BIOMES:minecraft:has_structure/mineshaft": [
       "~CUSTOM:ElvenForest"
     ],
     "ITEMS:minecraft:music_discs": [
       "~CUSTOM:MistyMountains"
-    ],
-    "BIOMES:minecraft:has_structure/woodland_mansion": [
-      "~CUSTOM:Mordor"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~Blocks.ICE",
@@ -1706,11 +1637,10 @@
       "~Blocks.DIRT#0",
       "~Blocks.GRASS"
     ],
-    "BLOCKS:minecraft:logs": [
-      "CUSTOM:MallornLog"
-    ],
-    "BLOCKS:minecraft:leaves": [
-      "~CUSTOM:MallornLeaves"
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:MallornPlanks",
+      "~CUSTOM:MallornLog",
+      "~CUSTOM:MallornWood"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:ArchaicGold",
@@ -1718,44 +1648,34 @@
       "~CUSTOM:MithrilOre",
       "~CUSTOM:BurningMagma"
     ],
-    "BLOCKS:minecraft:mineable/axe": [
-      "~CUSTOM:MallornPlanks",
-      "~CUSTOM:MallornLog",
-      "~CUSTOM:MallornWood"
-    ],
-    "BLOCKS:minecraft:slabs": [
-      "~CUSTOM:MallornSlab"
-    ],
     "BIOMES:minecraft:has_structure/village_savanna": [
       "~CUSTOM:ElvenForest"
-    ],
-    "BIOMES:minecraft:has_structure/bastion_remnant": [
-      "~CUSTOM:Mordor"
     ],
     "BLOCKS:minecraft:fences": [
       "~CUSTOM:MallornFence"
     ],
-    "BLOCKS:minecraft:stairs": [
-      "~CUSTOM:MallornStairs"
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:Mithril_ToolsShovel"
     ],
     "BIOMES:minecraft:has_structure/village_plains": [
       "~CUSTOM:HobbitPlains"
     ]
   },
+  "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item.the_hobbit_mod.mithril_armor_boots": "Mithril Boots",
       "block.the_lotr_mod.mallorn_leaves": "Mallorn Leaves",
-      "biome.the_hobbit_mod.elven_forest": "Elven Forest",
       "subtitles.nazgul_dead": "",
+      "biome.the_hobbit_mod.elven_forest": "Elven Forest",
       "item.the_lotr_mod.orc_spawn_egg": "Orc Spawn Egg",
       "subtitles.feast_of_starlight": "",
       "item.the_lotr_mod.mithril_armor_boots": "Mithril Boots",
       "biome.the_lotr_mod.mordor": "Mordor",
       "advancements.the_bane_of_men.title": "The Bane Of Men",
       "block.the_lotr_mod.mallorn_wood": "Mallorn Wood",
-      "block.the_hobbit_mod.mallorn_pressure_plate": "Mallorn Pressure Plate",
       "advancements.elf_friend.descr": "Enter a Elvish Forest.",
+      "block.the_hobbit_mod.mallorn_pressure_plate": "Mallorn Pressure Plate",
       "subtitles.smaug": "",
       "item.the_hobbit_mod.burning_magma_shard": "Burning Magma Shard",
       "block.the_hobbit_mod.mallorn_fence": "Mallorn Fence",
@@ -1960,5 +1880,5 @@
     "credits": "gh5674, witherwraith",
     "modElementsPackage": "net.mcreator.thehobbitmod"
   },
-  "mcreatorVersion": 202400118518
+  "mcreatorVersion": 202400232117
 }

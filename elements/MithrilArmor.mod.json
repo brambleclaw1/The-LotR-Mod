@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -13,9 +13,11 @@
     "onBodyTick": {
       "name": "MithrilArmorBodyTickEvent"
     },
-    "creativeTab": {
-      "value": "CUSTOM:TheHobbitMod"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TheHobbitMod"
+      }
+    ],
     "armorTextureFile": "mithril_armor",
     "helmetName": "Mithril Helmet",
     "bodyName": "Mithril Chestplate",
