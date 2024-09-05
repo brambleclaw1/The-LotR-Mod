@@ -1592,9 +1592,9 @@
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:Mithril_ToolsSword",
-      "~CUSTOM:Orcrist",
       "~CUSTOM:Glamdring",
-      "~CUSTOM:Sting"
+      "~CUSTOM:Sting",
+      "~CUSTOM:Orcrist"
     ],
     "ITEMS:forge:mallorn_log": [
       "CUSTOM:MallornWood",
@@ -1825,6 +1825,10 @@
         "children": []
       },
       {
+        "name": "Features",
+        "children": []
+      },
+      {
         "name": "ToolsAndArmor",
         "children": []
       },
@@ -1853,10 +1857,6 @@
         "children": []
       },
       {
-        "name": "Features",
-        "children": []
-      },
-      {
         "name": "Gui",
         "children": []
       }
@@ -1880,5 +1880,5 @@
     "credits": "gh5674, witherwraith",
     "modElementsPackage": "net.mcreator.thehobbitmod"
   },
-  "mcreatorVersion": 202400232117
+  "mcreatorVersion": 202400118518
 }

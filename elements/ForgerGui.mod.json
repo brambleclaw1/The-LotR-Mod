@@ -76,7 +76,7 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 205,
-          "y": 72
+          "y": 71
         }
       },
       {
@@ -113,6 +113,24 @@
           "use1Xscale": false,
           "x": 241,
           "y": 73
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "plus.png",
+          "use1Xscale": false,
+          "x": 152,
+          "y": 72
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "plus.png",
+          "use1Xscale": false,
+          "x": 188,
+          "y": 71
         }
       }
     ],

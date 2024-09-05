@@ -90,7 +90,7 @@
           "biome": "the_hobbit_mod:weather_hills",
           "parameters": {
             "temperature": [
-              -0.44,
+              -0.8,
               0.2
             ],
             "humidity": [
@@ -98,8 +98,8 @@
               0.4
             ],
             "continentalness": [
-              0.03,
-              0.6
+              0.3,
+              0.8
             ],
             "weirdness": [
               -1,
@@ -107,7 +107,7 @@
             ],
             "erosion": [
               0.35,
-              0.8
+              0.9
             ],
             "depth": 0,
             "offset": 0
@@ -133,8 +133,8 @@
               1
             ],
             "erosion": [
-              0.55,
-              1
+              0.87,
+              1.7
             ],
             "depth": 0,
             "offset": 0

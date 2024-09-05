@@ -10,6 +10,6 @@
     "absolute": 0
   },
   "project_start_to_heightmap": "MOTION_BLOCKING",
-  "biomes": "#the_lotr_mod:is_lotr_biome",
+  "biomes": "#the_lotr_mod:middle_earth",
   "use_expansion_hack": false
 }
