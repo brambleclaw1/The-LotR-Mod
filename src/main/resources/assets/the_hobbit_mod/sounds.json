@@ -62,5 +62,13 @@
         "stream": true
       }
     ]
+  },
+  "steward_of_gondor": {
+    "sounds": [
+      {
+        "name": "the_hobbit_mod:steward_of_gondor",
+        "stream": true
+      }
+    ]
   }
 }

@@ -1505,6 +1505,94 @@
         ]
       },
       "path": "~/Loot Tables"
+    },
+    {
+      "name": "HeartOfADwarf",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_of_a_dwarf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/heart_of_a_dwarf.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "ATarnishedRelic",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_tarnished_relic",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/a_tarnished_relic.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "SmokingAddict",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smoking_addict",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/smoking_addict.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "TheStewardOfGondor",
+      "type": "musicdisc",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_steward_of_gondor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/item/TheStewardOfGondorItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/the_steward_of_gondor.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "StewardDiscRecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steward_disc_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/procedures/StewardDiscRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [],
@@ -1571,6 +1659,14 @@
         "evenstar"
       ],
       "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "steward_of_gondor",
+      "files": [
+        "steward_of_gondor"
+      ],
+      "category": "record",
       "subtitle": ""
     }
   ],
@@ -1639,6 +1735,7 @@
       "~CUSTOM:ElvenForest"
     ],
     "ITEMS:minecraft:music_discs": [
+      "~CUSTOM:TheStewardOfGondor",
       "~CUSTOM:MistyMountains"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
@@ -1696,6 +1793,7 @@
       "item.the_hobbit_mod.mithril_tools_sword": "Mithril Sword",
       "item.the_lotr_mod.mithril_ingot": "Mithril Ingot",
       "item.the_lotr_mod.misty_mountains.desc": "Misty Mountains",
+      "advancements.a_tarnished_relic.title": "A Tarnished Relic",
       "item.the_hobbit_mod.pipe": "Pipe",
       "block.the_hobbit_mod.mallorn_log": "Mallorn Log",
       "gui.the_hobbit_mod.forger_gui.button_melt": "Melt",
@@ -1732,6 +1830,7 @@
       "item.the_hobbit_mod.orcrist": "Orcrist",
       "advancements.one_does_not_simply.descr": "Walk into Mordor.",
       "biome.the_hobbit_mod.mordor": "Mordor",
+      "advancements.a_tarnished_relic.descr": "Forge a Tarnished Ring.",
       "item.the_hobbit_mod.seven_rings": "The Seven Rings",
       "item.the_lotr_mod.sting": "Sting",
       "block.the_lotr_mod.mallorn_fence": "Mallorn Fence",
@@ -1772,6 +1871,7 @@
       "item.the_lotr_mod.tarnished_ring": "Tarnished Ring",
       "block.the_lotr_mod.archaic_gold": "Archaic Gold",
       "item.the_lotr_mod.raw_archaic_gold": "Raw Archaic Gold",
+      "advancements.smoking_addict.descr": "Take your first whiff, and let it envelop you...",
       "item.the_hobbit_mod.the_one_ring": "The One Ring",
       "item.the_lotr_mod.nine_rings": "The Nine Rings",
       "item.the_lotr_mod.nazgul_spawn_egg": "Nazgul Spawn Egg",
@@ -1779,14 +1879,16 @@
       "advancements.mithril.descr": "Mine your first mithril.",
       "advancements.my_precious.descr": "Find the One Ring",
       "advancements.the_quiet_folk.title": "The Quiet Folk",
+      "item.the_hobbit_mod.the_steward_of_gondor.desc": "Howard Shore - LotR Trilogy",
       "item.the_hobbit_mod.nine_rings": "The Nine Rings",
       "biome.the_lotr_mod.dead_marshes": "Dead Marshes",
       "item.the_hobbit_mod.mithril_armor_helmet": "Mithril Helmet",
+      "item.the_hobbit_mod.the_steward_of_gondor": "The Steward Of Gondor",
       "biome.the_hobbit_mod.weather_hills": "Weather Hills",
       "item.the_hobbit_mod.mithril_tools_hoe": "Mithril Hoe",
       "item.the_hobbit_mod.mithril_armor_leggings": "Mithril Leggings",
       "item.the_hobbit_mod.tarnished_ring": "Tarnished Ring",
-      "item.the_hobbit_mod.misty_mountains.desc": "Misty Mountains",
+      "item.the_hobbit_mod.misty_mountains.desc": "Howard Shore - The Hobbit Trilogy",
       "subtitles.moon_runes": "",
       "block.the_hobbit_mod.mallorn_leaves": "Mallorn Leaves",
       "biome.the_lotr_mod.misty_mountain": "Misty Mountains",
@@ -1795,12 +1897,16 @@
       "subtitles.hobbit_ambient": "",
       "block.the_lotr_mod.mallorn_log": "Mallorn Log",
       "item.the_hobbit_mod.mithril_ingot": "Mithril Ingot",
+      "advancements.heart_of_a_dwarf.descr": "Obtain the Dwarf Rings.",
       "subtitles.gollum": "",
       "block.the_lotr_mod.forger": "The Forger",
+      "advancements.heart_of_a_dwarf.title": "Heart Of A Dwarf",
       "advancements.the_quiet_folk.descr": "Enter a Hobbit Plains biome.",
       "advancements.elf_friend.title": "Elf-Friend",
       "item.the_hobbit_mod.three_rings": "The Three Rings",
       "advancements.mithril.title": "Mithril!",
+      "subtitles.steward_of_gondor": "",
+      "advancements.smoking_addict.title": "Smoking Addict",
       "biome.the_lotr_mod.hobbit_plains": "Hobbit Plains",
       "subtitles.misty_mountains": "",
       "item.the_hobbit_mod.mithril_tools_axe": "Mithril Axe",

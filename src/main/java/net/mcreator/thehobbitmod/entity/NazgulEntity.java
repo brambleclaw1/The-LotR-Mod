@@ -33,7 +33,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
-import net.mcreator.thehobbitmod.init.TheHobbitModModItems;
 import net.mcreator.thehobbitmod.init.TheHobbitModModEntities;
 
 public class NazgulEntity extends Monster {
@@ -84,11 +83,6 @@ public class NazgulEntity extends Monster {
 	@Override
 	public double getMyRidingOffset() {
 		return -0.35D;
-	}
-
-	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
-		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(TheHobbitModModItems.NINE_RINGS.get()));
 	}
 
 	@Override

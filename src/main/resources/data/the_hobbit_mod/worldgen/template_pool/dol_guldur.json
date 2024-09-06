@@ -6,7 +6,7 @@
       "weight": 1,
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "the_hobbit_mod:dolguldur",
+        "location": "the_hobbit_mod:dol_guldur",
         "projection": "rigid",
         "processors": {
           "processors": [
@@ -17,7 +17,7 @@
                   "Name": "minecraft:structure_block"
                 },
                 {
-                  "Name": "minecraft:air"
+                  "Name": "minecraft:dirt"
                 }
               ]
             }

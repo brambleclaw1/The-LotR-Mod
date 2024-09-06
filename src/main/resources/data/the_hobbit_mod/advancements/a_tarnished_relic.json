@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "the_hobbit_mod:tarnished_ring"
+    },
+    "title": {
+      "translate": "advancements.a_tarnished_relic.title"
+    },
+    "description": {
+      "translate": "advancements.a_tarnished_relic.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "a_tarnished_relic_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "the_hobbit_mod:tarnished_ring"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "the_hobbit_mod:the_hobbit_mod_install"
+}

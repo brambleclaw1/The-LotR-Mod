@@ -58,6 +58,7 @@ public class TheHobbitModModTabs {
 				tabData.accept(TheHobbitModModItems.ARCHAIC_GOLD_INGOT.get());
 				tabData.accept(TheHobbitModModItems.RAW_ARCHAIC_GOLD.get());
 				tabData.accept(TheHobbitModModBlocks.ARCHAIC_GOLD.get().asItem());
+				tabData.accept(TheHobbitModModItems.THE_STEWARD_OF_GONDOR.get());
 			})
 
 					.build());

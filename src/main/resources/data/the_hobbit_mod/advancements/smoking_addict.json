@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "the_hobbit_mod:pipe"
+    },
+    "title": {
+      "translate": "advancements.smoking_addict.title"
+    },
+    "description": {
+      "translate": "advancements.smoking_addict.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "smoking_addict_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "the_hobbit_mod:the_hobbit_mod_install"
+}

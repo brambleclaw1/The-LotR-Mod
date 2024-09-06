@@ -2,10 +2,10 @@
   "_fv": 66,
   "_type": "musicdisc",
   "definition": {
-    "name": "Misty Mountains",
-    "rarity": "RARE",
-    "texture": "music_disc_mountains",
-    "description": "Howard Shore - The Hobbit Trilogy",
+    "name": "The Steward Of Gondor",
+    "rarity": "UNCOMMON",
+    "texture": "music_disc_steward",
+    "description": "Howard Shore - LotR Trilogy",
     "creativeTabs": [
       {
         "value": "CUSTOM:TheHobbitMod"
@@ -18,9 +18,9 @@
       "fixedValue": false
     },
     "music": {
-      "value": "CUSTOM:misty_mountains"
+      "value": "CUSTOM:steward_of_gondor"
     },
-    "lengthInTicks": 3600,
-    "analogOutput": 0
+    "lengthInTicks": 1880,
+    "analogOutput": 2
   }
 }

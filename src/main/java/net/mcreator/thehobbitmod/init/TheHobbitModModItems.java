@@ -14,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.thehobbitmod.item.ThreeRingsItem;
+import net.mcreator.thehobbitmod.item.TheStewardOfGondorItem;
 import net.mcreator.thehobbitmod.item.TheOneRingItem;
 import net.mcreator.thehobbitmod.item.TarnishedRingItem;
 import net.mcreator.thehobbitmod.item.StingItem;
@@ -81,6 +82,7 @@ public class TheHobbitModModItems {
 	public static final RegistryObject<Item> ARCHAIC_GOLD_INGOT = REGISTRY.register("archaic_gold_ingot", () -> new ArchaicGoldIngotItem());
 	public static final RegistryObject<Item> RAW_ARCHAIC_GOLD = REGISTRY.register("raw_archaic_gold", () -> new RawArchaicGoldItem());
 	public static final RegistryObject<Item> ARCHAIC_GOLD = block(TheHobbitModModBlocks.ARCHAIC_GOLD);
+	public static final RegistryObject<Item> THE_STEWARD_OF_GONDOR = REGISTRY.register("the_steward_of_gondor", () -> new TheStewardOfGondorItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

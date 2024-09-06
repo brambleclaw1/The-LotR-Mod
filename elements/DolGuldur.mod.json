@@ -2,14 +2,14 @@
   "_fv": 66,
   "_type": "structure",
   "definition": {
-    "structure": "dolguldur",
+    "structure": "dol_guldur",
     "projection": "rigid",
     "ignoredBlocks": [
       {
         "value": "Blocks.STRUCTURE_BLOCK"
       },
       {
-        "value": "Blocks.AIR"
+        "value": "Blocks.DIRT#0"
       }
     ],
     "spacing": 40,
@@ -19,9 +19,9 @@
         "value": "CUSTOM:Mordor"
       }
     ],
-    "terrainAdaptation": "bury",
+    "terrainAdaptation": "beard_thin",
     "generationStep": "SURFACE_STRUCTURES",
-    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "surfaceDetectionType": "WORLD_SURFACE",
     "useStartHeight": false,
     "startHeightProviderType": "UNIFORM",
     "startHeightMin": 0,
