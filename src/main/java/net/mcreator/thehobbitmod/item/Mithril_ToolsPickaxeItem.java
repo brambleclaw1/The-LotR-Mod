@@ -1,7 +1,13 @@
 
 package net.mcreator.thehobbitmod.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+
+import net.mcreator.thehobbitmod.init.TheHobbitModModItems;
 
 public class Mithril_ToolsPickaxeItem extends PickaxeItem {
 	public Mithril_ToolsPickaxeItem() {

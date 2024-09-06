@@ -2,7 +2,7 @@
   "_fv": 66,
   "_type": "structure",
   "definition": {
-    "structure": "dol_guldur",
+    "structure": "dolguldur",
     "projection": "rigid",
     "ignoredBlocks": [
       {

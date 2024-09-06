@@ -1,11 +1,45 @@
 package net.mcreator.thehobbitmod.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import org.joml.Matrix4f;
 
-@Mod.EventBusSubscriber(value = Dist.CLIENT)
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.client.DimensionSpecialEffectsManager;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.GameRenderer;
+import net.minecraft.client.renderer.FogRenderer;
+import net.minecraft.client.renderer.DimensionSpecialEffects;
+import net.minecraft.client.multiplayer.ClientLevel;
+import net.minecraft.client.Minecraft;
+
+import javax.annotation.Nullable;
+
+import java.util.function.Predicate;
+import java.util.Set;
+
+import java.lang.reflect.Field;
+
+import com.mojang.blaze3d.vertex.VertexFormat;
+import com.mojang.blaze3d.vertex.VertexBuffer;
+import com.mojang.blaze3d.vertex.Tesselator;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.DefaultVertexFormat;
+import com.mojang.blaze3d.vertex.BufferUploader;
+import com.mojang.blaze3d.vertex.BufferBuilder;
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.platform.GlStateManager;
+
+@Mod.EventBusSubscriber(value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CustomSkySunriseProcedure {
-	private static List<Predicate<Object[]>> customSky = null;
-	private static Class<?> effects = null;
 	private static int ticks = 0;
 	private static float partialTick = 0.0F;
 	private static PoseStack poseStack = null;
@@ -30,18 +64,8 @@ public class CustomSkySunriseProcedure {
 		if (entity != null) {
 			ClientLevel level = minecraft.level;
 			Vec3 pos = entity.getPosition(partialTick);
-			RenderSystem.depthMask(false);
-			RenderSystem.enableBlend();
-			RenderSystem.defaultBlendFunc();
-			RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
 			execute(null, level);
 		}
-		RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
-		RenderSystem.defaultBlendFunc();
-		RenderSystem.disableBlend();
-		RenderSystem.enableCull();
-		RenderSystem.enableDepthTest();
-		RenderSystem.depthMask(true);
 		return false;
 	};
 
@@ -397,6 +421,7 @@ public class CustomSkySunriseProcedure {
 			int blue = color & 255;
 			int alpha = (int) ((color >>> 24) * rawColor[3]);
 			Matrix4f matrix4f = poseStack.last().pose();
+			RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
 			RenderSystem.setShader(GameRenderer::getPositionColorShader);
 			BufferBuilder bufferBuilder = Tesselator.getInstance().getBuilder();
 			bufferBuilder.begin(VertexFormat.Mode.TRIANGLE_FAN, DefaultVertexFormat.POSITION_COLOR);
@@ -444,18 +469,14 @@ public class CustomSkySunriseProcedure {
 	}
 
 	@SubscribeEvent
-	public static void renderSky(TickEvent.RenderTickEvent event) {
-		if (event.phase != TickEvent.Phase.START)
-			return;
+	public static void skySetup(FMLClientSetupEvent event) {
 		try {
-			Class<?> effects = Minecraft.getInstance().level.effects().getClass().getSuperclass();
-			if (!effects.getName().contains("TheHobbitModModDimensionEffects"))
-				return;
-			if (effects != CustomSkySunriseProcedure.effects) {
-				CustomSkySunriseProcedure.effects = effects;
-				CustomSkySunriseProcedure.customSky = (List<Predicate<Object[]>>) effects.getField("CUSTOM_SKY").get(null);
+			Field field = DimensionSpecialEffectsManager.class.getDeclaredField("EFFECTS");
+			field.setAccessible(true);
+			for (DimensionSpecialEffects dimensionSpecialEffects : ((com.google.common.collect.ImmutableMap<ResourceLocation, DimensionSpecialEffects>) field.get(null)).values()) {
+				Class<?> effects = dimensionSpecialEffects.getClass();
+				((Set<Predicate<Object[]>>) effects.getField("CUSTOM_SKY").get(null)).add(PREDICATE);
 			}
-			CustomSkySunriseProcedure.customSky.add(PREDICATE);
 		} catch (Exception e) {
 		}
 	}
