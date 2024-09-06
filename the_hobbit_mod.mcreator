@@ -1593,6 +1593,74 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "ThreeRingsToTheElves",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "three_rings_to_the_elves",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/three_rings_to_the_elves.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "DesolateFields",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desolate_fields",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/desolate_fields.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "FarOverTheMistyMountains",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "far_over_the_misty_mountains",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/far_over_the_misty_mountains.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "WhereTheDeadReawaken",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "where_the_dead_reawaken",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/where_the_dead_reawaken.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Tomb",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomb",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/tomb_biome_modifier.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/tomb.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/tomb.json"
+        ],
+        "has_nbt_structure": true
+      },
+      "path": "~/Features"
     }
   ],
   "variable_elements": [],
@@ -1775,6 +1843,7 @@
       "block.the_lotr_mod.mallorn_leaves": "Mallorn Leaves",
       "subtitles.nazgul_dead": "",
       "biome.the_hobbit_mod.elven_forest": "Elven Forest",
+      "advancements.three_rings_to_the_elves.title": "Three Rings To The Elves...",
       "item.the_lotr_mod.orc_spawn_egg": "Orc Spawn Egg",
       "subtitles.feast_of_starlight": "",
       "item.the_lotr_mod.mithril_armor_boots": "Mithril Boots",
@@ -1790,11 +1859,13 @@
       "item.the_lotr_mod.pipe": "Pipe",
       "subtitles.dreaming_of_bag_end": "",
       "itemGroup.tabthe_hobbit_mod": "The Hobbit Mod",
+      "advancements.far_over_the_misty_mountains.title": "Far Over The Misty Mountains Cold...",
       "item.the_hobbit_mod.mithril_tools_sword": "Mithril Sword",
       "item.the_lotr_mod.mithril_ingot": "Mithril Ingot",
       "item.the_lotr_mod.misty_mountains.desc": "Misty Mountains",
       "advancements.a_tarnished_relic.title": "A Tarnished Relic",
       "item.the_hobbit_mod.pipe": "Pipe",
+      "advancements.where_the_dead_reawaken.title": "Where The Dead Reawaken",
       "block.the_hobbit_mod.mallorn_log": "Mallorn Log",
       "gui.the_hobbit_mod.forger_gui.button_melt": "Melt",
       "item.the_lotr_mod.burning_magma_shard": "Burning Magma Shard",
@@ -1830,6 +1901,7 @@
       "item.the_hobbit_mod.orcrist": "Orcrist",
       "advancements.one_does_not_simply.descr": "Walk into Mordor.",
       "biome.the_hobbit_mod.mordor": "Mordor",
+      "advancements.desolate_fields.descr": "Enter the Weathered Hills",
       "advancements.a_tarnished_relic.descr": "Forge a Tarnished Ring.",
       "item.the_hobbit_mod.seven_rings": "The Seven Rings",
       "item.the_lotr_mod.sting": "Sting",
@@ -1837,6 +1909,7 @@
       "item.the_hobbit_mod.sting": "Sting",
       "block.the_hobbit_mod.archaic_gold": "Archaic Gold",
       "item.the_lotr_mod.mithril_armor_chestplate": "Mithril Chestplate",
+      "advancements.where_the_dead_reawaken.descr": "Step through the forboding Dead Marshes.",
       "block.the_lotr_mod.mallorn_stairs": "Mallorn Stairs",
       "advancements.the_bane_of_men.descr": "Hold the Nine Ring for the first time.",
       "item.the_hobbit_mod.mithril_tools_shovel": "Mithril Shovel",
@@ -1861,6 +1934,7 @@
       "item.the_hobbit_mod.glamdring": "Glamdring",
       "item.the_hobbit_mod.mithril_armor_chestplate": "Mithril Chestplate",
       "block.the_hobbit_mod.mallorn_fence_gate": "Mallorn Fence Gate",
+      "advancements.three_rings_to_the_elves.descr": "Obtain one of the Three Rings.",
       "entity.the_hobbit_mod.orc": "Orc",
       "block.the_lotr_mod.mallorn_fence_gate": "Mallorn Fence Gate",
       "item.the_lotr_mod.mithril_armor_leggings": "Mithril Leggings",
@@ -1868,6 +1942,7 @@
       "advancements.its_worth_is_greater.title": "It\u0027s worth is greater then the whole Shire...",
       "item.the_lotr_mod.mithril_tools_pickaxe": "Mithril Pickaxe",
       "subtitles.get_ring": "",
+      "advancements.far_over_the_misty_mountains.descr": "Enter the cruel Misty Mountains.",
       "item.the_lotr_mod.tarnished_ring": "Tarnished Ring",
       "block.the_lotr_mod.archaic_gold": "Archaic Gold",
       "item.the_lotr_mod.raw_archaic_gold": "Raw Archaic Gold",
@@ -1899,6 +1974,7 @@
       "item.the_hobbit_mod.mithril_ingot": "Mithril Ingot",
       "advancements.heart_of_a_dwarf.descr": "Obtain the Dwarf Rings.",
       "subtitles.gollum": "",
+      "advancements.desolate_fields.title": "Desolate Fields",
       "block.the_lotr_mod.forger": "The Forger",
       "advancements.heart_of_a_dwarf.title": "Heart Of A Dwarf",
       "advancements.the_quiet_folk.descr": "Enter a Hobbit Plains biome.",

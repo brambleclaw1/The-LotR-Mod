@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "the_hobbit_mod:three_rings"
+    },
+    "title": {
+      "translate": "advancements.three_rings_to_the_elves.title"
+    },
+    "description": {
+      "translate": "advancements.three_rings_to_the_elves.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "three_rings_to_the_elves_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "the_hobbit_mod:three_rings"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "the_hobbit_mod:the_hobbit_mod_install"
+}

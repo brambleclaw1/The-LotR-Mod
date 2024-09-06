@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:dead_bush"
+    },
+    "title": {
+      "translate": "advancements.desolate_fields.title"
+    },
+    "description": {
+      "translate": "advancements.desolate_fields.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "desolate_fields_0": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "the_hobbit_mod:weather_hills"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "the_hobbit_mod:the_hobbit_mod_install"
+}
