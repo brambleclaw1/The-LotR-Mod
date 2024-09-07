@@ -15,14 +15,6 @@
       }
     ]
   },
-  "misty_mountains": {
-    "sounds": [
-      {
-        "name": "the_hobbit_mod:misty_mountains",
-        "stream": true
-      }
-    ]
-  },
   "nazgul": {
     "sounds": [
       {
@@ -67,6 +59,14 @@
     "sounds": [
       {
         "name": "the_hobbit_mod:steward_of_gondor",
+        "stream": true
+      }
+    ]
+  },
+  "misty_mountains": {
+    "sounds": [
+      {
+        "name": "the_hobbit_mod:misty_mountains",
         "stream": true
       }
     ]

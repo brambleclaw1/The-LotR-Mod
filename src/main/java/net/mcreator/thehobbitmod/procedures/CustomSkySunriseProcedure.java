@@ -10,7 +10,6 @@ import net.minecraftforge.client.DimensionSpecialEffectsManager;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
@@ -64,7 +63,7 @@ public class CustomSkySunriseProcedure {
 		if (entity != null) {
 			ClientLevel level = minecraft.level;
 			Vec3 pos = entity.getPosition(partialTick);
-			execute(null, level);
+			execute(null);
 		}
 		return false;
 	};
@@ -481,35 +480,13 @@ public class CustomSkySunriseProcedure {
 		}
 	}
 
-	public static void execute(LevelAccessor world) {
-		execute(null, world);
+	public static void execute() {
+		execute(null);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world) {
+	private static void execute(@Nullable Event event) {
 		double worldtime = 0;
-		worldtime = world.dayTime();
-		if (worldtime > 23000) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation(("the_lotr_mod" + ":textures/" + "sunrise" + ".png")));
-			renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
-		} else {
-			if (worldtime > 13000) {
-				if (worldtime < 23000) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation(("the_lotr_mod" + ":textures/" + "night" + ".png")));
-					renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
-				} else {
-					if (worldtime > 12000) {
-						if (worldtime < 13000) {
-							RenderSystem.setShaderTexture(0, new ResourceLocation(("the_lotr_mod" + ":textures/" + "sunset" + ".png")));
-							renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
-						} else {
-							if (worldtime < 12000) {
-								RenderSystem.setShaderTexture(0, new ResourceLocation(("the_lotr_mod" + ":textures/" + "noon" + ".png")));
-								renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
-							}
-						}
-					}
-				}
-			}
-		}
+		RenderSystem.setShaderTexture(0, new ResourceLocation(("the_hobbit_mod" + ":textures/" + "night" + ".png")));
+		renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
 	}
 }

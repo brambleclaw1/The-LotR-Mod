@@ -122,10 +122,10 @@
             ],
             "humidity": [
               -1,
-              -0.35
+              -0.2
             ],
             "continentalness": [
-              0.3,
+              0,
               1
             ],
             "weirdness": [

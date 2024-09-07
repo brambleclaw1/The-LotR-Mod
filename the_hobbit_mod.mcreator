@@ -114,19 +114,6 @@
       "path": "~/Blocks"
     },
     {
-      "name": "MithrilIngotRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mithril_ingot_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/the_hobbit_mod/recipes/mithril_ingot_recipe.json"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
       "name": "Sting",
       "type": "tool",
       "compiles": true,
@@ -1256,12 +1243,7 @@
         "files": [
           "src/main/java/net/mcreator/thehobbitmod/procedures/CustomSkySunriseProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Procedures"
     },
@@ -1560,41 +1542,6 @@
       "path": "~/Items"
     },
     {
-      "name": "StewardDiscRecipe",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "steward_disc_recipe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/thehobbitmod/procedures/StewardDiscRecipeProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
       "name": "ThreeRingsToTheElves",
       "type": "achievement",
       "compiles": true,
@@ -1661,6 +1608,19 @@
         "has_nbt_structure": true
       },
       "path": "~/Features"
+    },
+    {
+      "name": "StewardDiscRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steward_disc_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/steward_disc_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -1677,14 +1637,6 @@
       "name": "smaug",
       "files": [
         "smaug"
-      ],
-      "category": "music",
-      "subtitle": ""
-    },
-    {
-      "name": "misty_mountains",
-      "files": [
-        "misty_mountains"
       ],
       "category": "music",
       "subtitle": ""
@@ -1733,6 +1685,14 @@
       "name": "steward_of_gondor",
       "files": [
         "steward_of_gondor"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "misty_mountains",
+      "files": [
+        "misty_mountains"
       ],
       "category": "record",
       "subtitle": ""

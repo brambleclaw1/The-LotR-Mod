@@ -6,19 +6,14 @@ package net.mcreator.thehobbitmod.init;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.thehobbitmod.TheHobbitModMod;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class TheHobbitModModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TheHobbitModMod.MODID);
 	public static final RegistryObject<CreativeModeTab> THE_HOBBIT_MOD = REGISTRY.register("the_hobbit_mod",
@@ -48,11 +43,18 @@ public class TheHobbitModModTabs {
 				tabData.accept(TheHobbitModModBlocks.MALLORN_WOOD.get().asItem());
 				tabData.accept(TheHobbitModModBlocks.MALLORN_LOG.get().asItem());
 				tabData.accept(TheHobbitModModBlocks.MALLORN_PLANKS.get().asItem());
+				tabData.accept(TheHobbitModModBlocks.MALLORN_LEAVES.get().asItem());
 				tabData.accept(TheHobbitModModBlocks.MALLORN_STAIRS.get().asItem());
 				tabData.accept(TheHobbitModModBlocks.MALLORN_SLAB.get().asItem());
 				tabData.accept(TheHobbitModModBlocks.MALLORN_FENCE.get().asItem());
 				tabData.accept(TheHobbitModModBlocks.MALLORN_FENCE_GATE.get().asItem());
+				tabData.accept(TheHobbitModModBlocks.MALLORN_PRESSURE_PLATE.get().asItem());
 				tabData.accept(TheHobbitModModBlocks.MALLORN_BUTTON.get().asItem());
+				tabData.accept(TheHobbitModModItems.MITHRIL_TOOLS_PICKAXE.get());
+				tabData.accept(TheHobbitModModItems.MITHRIL_TOOLS_AXE.get());
+				tabData.accept(TheHobbitModModItems.MITHRIL_TOOLS_SWORD.get());
+				tabData.accept(TheHobbitModModItems.MITHRIL_TOOLS_SHOVEL.get());
+				tabData.accept(TheHobbitModModItems.MITHRIL_TOOLS_HOE.get());
 				tabData.accept(TheHobbitModModBlocks.FORGER.get().asItem());
 				tabData.accept(TheHobbitModModBlocks.DEEPSLATE_MITHRIL_ORE.get().asItem());
 				tabData.accept(TheHobbitModModItems.ARCHAIC_GOLD_INGOT.get());
@@ -62,20 +64,4 @@ public class TheHobbitModModTabs {
 			})
 
 					.build());
-
-	@SubscribeEvent
-	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
-			tabData.accept(TheHobbitModModBlocks.MALLORN_PRESSURE_PLATE.get().asItem());
-		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
-			tabData.accept(TheHobbitModModItems.MITHRIL_TOOLS_SWORD.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-			tabData.accept(TheHobbitModModBlocks.MALLORN_LEAVES.get().asItem());
-		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-			tabData.accept(TheHobbitModModItems.MITHRIL_TOOLS_PICKAXE.get());
-			tabData.accept(TheHobbitModModItems.MITHRIL_TOOLS_AXE.get());
-			tabData.accept(TheHobbitModModItems.MITHRIL_TOOLS_SHOVEL.get());
-			tabData.accept(TheHobbitModModItems.MITHRIL_TOOLS_HOE.get());
-		}
-	}
 }

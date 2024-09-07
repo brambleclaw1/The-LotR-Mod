@@ -47,7 +47,7 @@
     },
     "particlesProbability": 0.5,
     "rainingPossibility": 0.5,
-    "temperature": 0.5,
+    "temperature": 0.0,
     "spawnBiome": false,
     "spawnInCaves": false,
     "spawnBiomeNether": false,
@@ -57,10 +57,10 @@
     },
     "genHumidity": {
       "min": -1.0,
-      "max": -0.35
+      "max": -0.2
     },
     "genContinentalness": {
-      "min": 0.3,
+      "min": 0.0,
       "max": 1.0
     },
     "genErosion": {
