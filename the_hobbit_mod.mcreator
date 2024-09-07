@@ -1708,6 +1708,9 @@
       "~CUSTOM:Mordor",
       "~CUSTOM:ElvenForest"
     ],
+    "ITEMS:minecraft:enchantable/mining": [
+      "CUSTOM:Mithril_ToolsPickaxe"
+    ],
     "ITEMS:minecraft:hoes": [
       "~CUSTOM:Mithril_ToolsHoe"
     ],
@@ -1738,6 +1741,9 @@
       "~CUSTOM:Glamdring",
       "~CUSTOM:Sting"
     ],
+    "ITEMS:minecraft:planks": [
+      "CUSTOM:MallornPlanks"
+    ],
     "ITEMS:forge:mallorn_log": [
       "CUSTOM:MallornWood",
       "CUSTOM:MallornLog"
@@ -1760,6 +1766,10 @@
       "CUSTOM:MistyMountain",
       "CUSTOM:Mordor",
       "CUSTOM:WeatherHills"
+    ],
+    "BLOCKS:minecraft:wooden_fences": [
+      "CUSTOM:MallornFence",
+      "CUSTOM:MallornFenceGate"
     ],
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:Mithril_ToolsPickaxe"
@@ -1796,6 +1806,9 @@
     ],
     "BLOCKS:minecraft:fences": [
       "~CUSTOM:MallornFence"
+    ],
+    "ITEMS:minecraft:enchantable/weapon": [
+      "CUSTOM:Mithril_ToolsSword"
     ],
     "ITEMS:minecraft:shovels": [
       "~CUSTOM:Mithril_ToolsShovel"
