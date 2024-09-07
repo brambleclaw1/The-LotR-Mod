@@ -10,10 +10,13 @@ import net.minecraftforge.client.DimensionSpecialEffectsManager;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.renderer.FogRenderer;
 import net.minecraft.client.renderer.DimensionSpecialEffects;
@@ -63,7 +66,7 @@ public class CustomSkySunriseProcedure {
 		if (entity != null) {
 			ClientLevel level = minecraft.level;
 			Vec3 pos = entity.getPosition(partialTick);
-			execute(null);
+			execute(null, level.dimension());
 		}
 		return false;
 	};
@@ -480,13 +483,17 @@ public class CustomSkySunriseProcedure {
 		}
 	}
 
-	public static void execute() {
-		execute(null);
+	public static void execute(ResourceKey<Level> dimension) {
+		execute(null, dimension);
 	}
 
-	private static void execute(@Nullable Event event) {
+	private static void execute(@Nullable Event event, ResourceKey<Level> dimension) {
+		if (dimension == null)
+			return;
 		double worldtime = 0;
-		RenderSystem.setShaderTexture(0, new ResourceLocation(("the_hobbit_mod" + ":textures/" + "night" + ".png")));
-		renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
+		if (dimension == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("the_hobbit_mod:middle_earth"))) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation(("the_hobbit_mod" + ":textures/" + "night" + ".png")));
+			renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
+		}
 	}
 }
