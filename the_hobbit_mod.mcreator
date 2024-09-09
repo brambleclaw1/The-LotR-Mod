@@ -1592,9 +1592,9 @@
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:Mithril_ToolsSword",
+      "~CUSTOM:Orcrist",
       "~CUSTOM:Glamdring",
-      "~CUSTOM:Sting",
-      "~CUSTOM:Orcrist"
+      "~CUSTOM:Sting"
     ],
     "ITEMS:forge:mallorn_log": [
       "CUSTOM:MallornWood",
@@ -1637,16 +1637,16 @@
       "~Blocks.DIRT#0",
       "~Blocks.GRASS"
     ],
-    "BLOCKS:minecraft:mineable/axe": [
-      "~CUSTOM:MallornPlanks",
-      "~CUSTOM:MallornLog",
-      "~CUSTOM:MallornWood"
-    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:ArchaicGold",
       "~CUSTOM:DeepslateMithrilOre",
       "~CUSTOM:MithrilOre",
       "~CUSTOM:BurningMagma"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:MallornPlanks",
+      "~CUSTOM:MallornLog",
+      "~CUSTOM:MallornWood"
     ],
     "BIOMES:minecraft:has_structure/village_savanna": [
       "~CUSTOM:ElvenForest"
@@ -1656,9 +1656,6 @@
     ],
     "ITEMS:minecraft:shovels": [
       "~CUSTOM:Mithril_ToolsShovel"
-    ],
-    "BIOMES:minecraft:has_structure/village_plains": [
-      "~CUSTOM:HobbitPlains"
     ]
   },
   "tab_element_order": {},
@@ -1880,5 +1877,5 @@
     "credits": "gh5674, witherwraith",
     "modElementsPackage": "net.mcreator.thehobbitmod"
   },
-  "mcreatorVersion": 202400118518
+  "mcreatorVersion": 202400232117
 }

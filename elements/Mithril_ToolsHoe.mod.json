@@ -22,6 +22,9 @@
     "enchantability": 126,
     "damageVsEntity": 18.0,
     "usageCount": 5419,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:MithrilIngot"
