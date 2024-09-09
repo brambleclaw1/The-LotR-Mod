@@ -1726,6 +1726,9 @@
       "~CUSTOM:Mordor",
       "~CUSTOM:ElvenForest"
     ],
+    "ITEMS:minecraft:enchantable/mining": [
+      "CUSTOM:Mithril_ToolsPickaxe"
+    ],
     "ITEMS:minecraft:hoes": [
       "~CUSTOM:Mithril_ToolsHoe"
     ],
@@ -1756,6 +1759,9 @@
       "~CUSTOM:Glamdring",
       "~CUSTOM:Sting"
     ],
+    "ITEMS:minecraft:planks": [
+      "CUSTOM:MallornPlanks"
+    ],
     "ITEMS:forge:mallorn_log": [
       "CUSTOM:MallornWood",
       "CUSTOM:MallornLog"
@@ -1779,6 +1785,9 @@
       "CUSTOM:Mordor",
       "CUSTOM:WeatherHills"
     ],
+    "BLOCKS:minecraft:wooden_fences": [
+      "CUSTOM:MallornFence"
+    ],
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:Mithril_ToolsPickaxe"
     ],
@@ -1798,6 +1807,7 @@
       "~Blocks.DIRT#0",
       "~Blocks.GRASS"
     ],
+    "BIOMES:minecraft:is_overworld": [],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:ArchaicGold",
       "~CUSTOM:DeepslateMithrilOre",
@@ -1814,6 +1824,12 @@
     ],
     "BLOCKS:minecraft:fences": [
       "~CUSTOM:MallornFence"
+    ],
+    "ITEMS:minecraft:enchantable/weapon": [
+      "CUSTOM:Mithril_ToolsSword",
+      "CUSTOM:Sting",
+      "CUSTOM:Glamdring",
+      "CUSTOM:Orcrist"
     ],
     "ITEMS:minecraft:shovels": [
       "~CUSTOM:Mithril_ToolsShovel"
@@ -2040,7 +2056,7 @@
   "workspaceSettings": {
     "modid": "the_hobbit_mod",
     "modName": "The Hobbit Mod",
-    "version": "1.3.0",
+    "version": "2.0.0",
     "description": "Introduces the Lord of the Rings universe into Minecraft.",
     "author": "gh5674, witherwraith",
     "websiteURL": "https://mcreator.net/modification/92049/hobbit-mod",
