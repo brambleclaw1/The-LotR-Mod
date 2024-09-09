@@ -60,8 +60,8 @@
       "registry_name": "raw_mithril",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_hobbit_mod/models/item/raw_mithril.json",
-          "src/main/java/net/mcreator/thehobbitmod/item/RawMithrilItem.java"
+          "src/main/java/net/mcreator/thehobbitmod/item/RawMithrilItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/raw_mithril.json"
         ]
       },
       "path": "~/Items"
@@ -87,8 +87,8 @@
       "registry_name": "burning_magma_shard",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_hobbit_mod/models/item/burning_magma_shard.json",
-          "src/main/java/net/mcreator/thehobbitmod/item/BurningMagmaShardItem.java"
+          "src/main/java/net/mcreator/thehobbitmod/item/BurningMagmaShardItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/burning_magma_shard.json"
         ]
       },
       "path": "~/Items"
@@ -101,14 +101,14 @@
       "registry_name": "burning_magma",
       "metadata": {
         "files": [
-          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/burning_magma.json",
-          "src/main/java/net/mcreator/thehobbitmod/block/BurningMagmaBlock.java",
-          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/burning_magma_biome_modifier.json",
           "src/main/resources/assets/the_hobbit_mod/models/block/burning_magma.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/burning_magma.json",
-          "src/main/resources/assets/the_hobbit_mod/blockstates/burning_magma.json",
+          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/burning_magma.json",
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/burning_magma_biome_modifier.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/burning_magma.json",
-          "src/main/resources/assets/the_hobbit_mod/models/item/burning_magma.json"
+          "src/main/resources/assets/the_hobbit_mod/models/item/burning_magma.json",
+          "src/main/resources/assets/the_hobbit_mod/blockstates/burning_magma.json",
+          "src/main/java/net/mcreator/thehobbitmod/block/BurningMagmaBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -135,8 +135,8 @@
       "registry_name": "glamdring",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_hobbit_mod/models/item/glamdring.json",
-          "src/main/java/net/mcreator/thehobbitmod/item/GlamdringItem.java"
+          "src/main/java/net/mcreator/thehobbitmod/item/GlamdringItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/glamdring.json"
         ]
       },
       "path": "~/ToolsAndArmor"
@@ -183,13 +183,13 @@
       "metadata": {
         "files": [
           "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/mithril_ore_biome_modifier.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mithril_ore.json",
-          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_ore.json",
-          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/mithril_ore.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/mithril_ore.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/mithril_ore.json",
           "src/main/java/net/mcreator/thehobbitmod/block/MithrilOreBlock.java",
-          "src/main/resources/assets/the_hobbit_mod/blockstates/mithril_ore.json"
+          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/mithril_ore.json",
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mithril_ore.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/mithril_ore.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mithril_ore.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/mithril_ore.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_ore.json"
         ]
       },
       "path": "~/Blocks"
@@ -242,8 +242,8 @@
           "src/main/java/net/mcreator/thehobbitmod/item/MithrilArmorItem.java",
           "src/main/resources/assets/the_hobbit_mod/models/item/mithril_armor_chestplate.json",
           "src/main/resources/assets/the_hobbit_mod/models/item/mithril_armor_boots.json",
-          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_armor_helmet.json",
-          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_armor_leggings.json"
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_armor_leggings.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_armor_helmet.json"
         ]
       },
       "path": "~/ToolsAndArmor"
@@ -370,9 +370,9 @@
       "registry_name": "elven_forest",
       "metadata": {
         "files": [
-          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/elven_forest_tree.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/elven_forest_tree.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/biome/elven_forest.json"
+          "src/main/resources/data/the_hobbit_mod/worldgen/biome/elven_forest.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/elven_forest_tree.json"
         ]
       },
       "path": "~/Biomes"
@@ -450,8 +450,8 @@
       "registry_name": "nine_rings",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thehobbitmod/item/NineRingsItem.java",
-          "src/main/resources/assets/the_hobbit_mod/models/item/nine_rings.json"
+          "src/main/resources/assets/the_hobbit_mod/models/item/nine_rings.json",
+          "src/main/java/net/mcreator/thehobbitmod/item/NineRingsItem.java"
         ]
       },
       "path": "~/Items"
@@ -464,9 +464,9 @@
       "registry_name": "nazgul",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thehobbitmod/client/renderer/NazgulRenderer.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/nazgul_spawn_egg.json",
           "src/main/java/net/mcreator/thehobbitmod/entity/NazgulEntity.java",
-          "src/main/resources/assets/the_hobbit_mod/models/item/nazgul_spawn_egg.json"
+          "src/main/java/net/mcreator/thehobbitmod/client/renderer/NazgulRenderer.java"
         ]
       },
       "path": "~/Entities"
@@ -511,8 +511,8 @@
       "registry_name": "seven_rings",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thehobbitmod/item/SevenRingsItem.java",
-          "src/main/resources/assets/the_hobbit_mod/models/item/seven_rings.json"
+          "src/main/resources/assets/the_hobbit_mod/models/item/seven_rings.json",
+          "src/main/java/net/mcreator/thehobbitmod/item/SevenRingsItem.java"
         ]
       },
       "path": "~/Items"
@@ -587,8 +587,8 @@
       "registry_name": "three_rings",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_hobbit_mod/models/item/three_rings.json",
-          "src/main/java/net/mcreator/thehobbitmod/item/ThreeRingsItem.java"
+          "src/main/java/net/mcreator/thehobbitmod/item/ThreeRingsItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/three_rings.json"
         ]
       },
       "path": "~/Items"
@@ -633,9 +633,9 @@
       "registry_name": "middle_earth",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thehobbitmod/world/dimension/MiddleEarthDimension.java",
+          "src/main/resources/data/the_hobbit_mod/dimension_type/middle_earth.json",
           "src/main/resources/data/the_hobbit_mod/dimension/middle_earth.json",
-          "src/main/resources/data/the_hobbit_mod/dimension_type/middle_earth.json"
+          "src/main/java/net/mcreator/thehobbitmod/world/dimension/MiddleEarthDimension.java"
         ]
       }
     },
@@ -681,8 +681,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/hobbit_plains_tree.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/biome/hobbit_plains.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/hobbit_plains_tree.json"
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/hobbit_plains_tree.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/biome/hobbit_plains.json"
         ]
       },
       "path": "~/Biomes"
@@ -721,11 +721,11 @@
       "registry_name": "mallorn_wood",
       "metadata": {
         "files": [
-          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/mallorn_wood.json",
-          "src/main/java/net/mcreator/thehobbitmod/block/MallornWoodBlock.java",
-          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_wood.json",
           "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_wood.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_wood.json"
+          "src/main/java/net/mcreator/thehobbitmod/block/MallornWoodBlock.java",
+          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/mallorn_wood.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_wood.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_wood.json"
         ]
       },
       "path": "~/Blocks"
@@ -738,11 +738,11 @@
       "registry_name": "mallorn_log",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_log.json",
-          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_log.json",
           "src/main/java/net/mcreator/thehobbitmod/block/MallornLogBlock.java",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_log.json",
-          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/mallorn_log.json"
+          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/mallorn_log.json",
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_log.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_log.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_log.json"
         ]
       },
       "path": "~/Blocks"
@@ -755,11 +755,11 @@
       "registry_name": "mallorn_planks",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thehobbitmod/block/MallornPlanksBlock.java",
-          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_planks.json",
           "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_planks.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_planks.json",
-          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/mallorn_planks.json"
+          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_planks.json",
+          "src/main/java/net/mcreator/thehobbitmod/block/MallornPlanksBlock.java",
+          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/mallorn_planks.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_planks.json"
         ]
       },
       "path": "~/Blocks"
@@ -773,10 +773,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/thehobbitmod/block/MallornLeavesBlock.java",
-          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_leaves.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_leaves.json",
+          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/mallorn_leaves.json",
           "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_leaves.json",
-          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/mallorn_leaves.json"
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_leaves.json",
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_leaves.json"
         ]
       },
       "path": "~/Blocks"
@@ -789,13 +789,13 @@
       "registry_name": "mallorn_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_stairs.json",
-          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_stairs.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_stairs.json",
           "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_stairs_outer.json",
           "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/mallorn_stairs.json",
           "src/main/java/net/mcreator/thehobbitmod/block/MallornStairsBlock.java",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_stairs_inner.json"
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_stairs_inner.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_stairs.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_stairs.json",
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_stairs.json"
         ]
       },
       "path": "~/Blocks"
@@ -808,13 +808,13 @@
       "registry_name": "mallorn_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_slab.json",
-          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_slab.json",
-          "src/main/java/net/mcreator/thehobbitmod/block/MallornSlabBlock.java",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_slab.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_slab_top.json",
           "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/mallorn_slab.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_slab_full.json"
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_slab.json",
+          "src/main/java/net/mcreator/thehobbitmod/block/MallornSlabBlock.java",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_slab_top.json",
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_slab.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_slab_full.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_slab.json"
         ]
       },
       "path": "~/Blocks"
@@ -827,13 +827,13 @@
       "registry_name": "mallorn_fence",
       "metadata": {
         "files": [
-          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/mallorn_fence.json",
-          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_fence.json",
           "src/main/java/net/mcreator/thehobbitmod/block/MallornFenceBlock.java",
-          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_fence.json",
           "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_post.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_inventory.json",
           "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_inventory.json"
+          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/mallorn_fence.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_fence.json",
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_fence.json"
         ]
       },
       "path": "~/Blocks"
@@ -846,14 +846,14 @@
       "registry_name": "mallorn_fence_gate",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thehobbitmod/block/MallornFenceGateBlock.java",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate_wall.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate_open.json",
           "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate.json",
+          "src/main/java/net/mcreator/thehobbitmod/block/MallornFenceGateBlock.java",
           "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate_wall_open.json",
-          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/mallorn_fence_gate.json",
           "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_fence_gate.json",
-          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_fence_gate.json"
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate_wall.json",
+          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/mallorn_fence_gate.json",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_fence_gate.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_fence_gate_open.json"
         ]
       },
       "path": "~/Blocks"
@@ -866,12 +866,12 @@
       "registry_name": "mallorn_pressure_plate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_pressure_plate_down.json",
           "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_pressure_plate.json",
-          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_pressure_plate.json",
-          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/mallorn_pressure_plate.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_pressure_plate_down.json",
           "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_pressure_plate.json",
-          "src/main/java/net/mcreator/thehobbitmod/block/MallornPressurePlateBlock.java"
+          "src/main/java/net/mcreator/thehobbitmod/block/MallornPressurePlateBlock.java",
+          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/mallorn_pressure_plate.json",
+          "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_pressure_plate.json"
         ]
       },
       "path": "~/Blocks"
@@ -884,13 +884,13 @@
       "registry_name": "mallorn_button",
       "metadata": {
         "files": [
-          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/mallorn_button.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_button_inventory.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_button.json",
           "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_button_pressed.json",
           "src/main/resources/assets/the_hobbit_mod/models/item/mallorn_button.json",
           "src/main/resources/assets/the_hobbit_mod/blockstates/mallorn_button.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_button.json",
-          "src/main/java/net/mcreator/thehobbitmod/block/MallornButtonBlock.java"
+          "src/main/resources/assets/the_hobbit_mod/models/block/mallorn_button_inventory.json",
+          "src/main/java/net/mcreator/thehobbitmod/block/MallornButtonBlock.java",
+          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/mallorn_button.json"
         ]
       },
       "path": "~/Blocks"
@@ -1048,8 +1048,8 @@
       "registry_name": "mithril_tools_sword",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thehobbitmod/item/Mithril_ToolsSwordItem.java",
-          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_tools_sword.json"
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_tools_sword.json",
+          "src/main/java/net/mcreator/thehobbitmod/item/Mithril_ToolsSwordItem.java"
         ]
       },
       "path": "~/ToolsAndArmor"
@@ -1062,8 +1062,8 @@
       "registry_name": "mithril_tools_shovel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_tools_shovel.json",
-          "src/main/java/net/mcreator/thehobbitmod/item/Mithril_ToolsShovelItem.java"
+          "src/main/java/net/mcreator/thehobbitmod/item/Mithril_ToolsShovelItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/mithril_tools_shovel.json"
         ]
       },
       "path": "~/ToolsAndArmor"
@@ -1181,12 +1181,12 @@
       "registry_name": "forger",
       "metadata": {
         "files": [
+          "src/main/resources/assets/the_hobbit_mod/blockstates/forger.json",
           "src/main/java/net/mcreator/thehobbitmod/block/ForgerBlock.java",
-          "src/main/java/net/mcreator/thehobbitmod/block/entity/ForgerBlockEntity.java",
-          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/forger.json",
           "src/main/resources/assets/the_hobbit_mod/models/item/forger.json",
+          "src/main/java/net/mcreator/thehobbitmod/block/entity/ForgerBlockEntity.java",
           "src/main/resources/assets/the_hobbit_mod/models/block/forger.json",
-          "src/main/resources/assets/the_hobbit_mod/blockstates/forger.json"
+          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/forger.json"
         ]
       },
       "path": "~/Blocks"
@@ -1226,8 +1226,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/giant_mallorn_tree_feature.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/giant_mallorn_tree_feature.json",
-          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/giant_mallorn_tree_feature_biome_modifier.json"
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/giant_mallorn_tree_feature_biome_modifier.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/giant_mallorn_tree_feature.json"
         ],
         "has_nbt_structure": true
       },
@@ -1245,6 +1245,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -1260,9 +1264,9 @@
       "registry_name": "orc_tunnel",
       "metadata": {
         "files": [
-          "src/main/resources/data/the_hobbit_mod/worldgen/structure_set/orc_tunnel.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/structure/orc_tunnel.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/template_pool/orc_tunnel.json"
+          "src/main/resources/data/the_hobbit_mod/worldgen/template_pool/orc_tunnel.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/structure_set/orc_tunnel.json"
         ]
       },
       "path": "~/Structures"
@@ -1275,9 +1279,9 @@
       "registry_name": "dwarf_mine",
       "metadata": {
         "files": [
-          "src/main/resources/data/the_hobbit_mod/worldgen/structure/dwarf_mine.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/structure_set/dwarf_mine.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/template_pool/dwarf_mine.json"
+          "src/main/resources/data/the_hobbit_mod/worldgen/template_pool/dwarf_mine.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/structure/dwarf_mine.json"
         ]
       },
       "path": "~/Structures"
@@ -1290,9 +1294,9 @@
       "registry_name": "dol_guldur",
       "metadata": {
         "files": [
+          "src/main/resources/data/the_hobbit_mod/worldgen/structure/dol_guldur.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/structure_set/dol_guldur.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/template_pool/dol_guldur.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/structure/dol_guldur.json"
+          "src/main/resources/data/the_hobbit_mod/worldgen/template_pool/dol_guldur.json"
         ]
       },
       "path": "~/Structures"
@@ -1305,14 +1309,14 @@
       "registry_name": "deepslate_mithril_ore",
       "metadata": {
         "files": [
-          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/deepslate_mithril_ore.json",
-          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/deepslate_mithril_ore.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/deepslate_mithril_ore.json",
           "src/main/java/net/mcreator/thehobbitmod/block/DeepslateMithrilOreBlock.java",
           "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/deepslate_mithril_ore_biome_modifier.json",
+          "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/deepslate_mithril_ore.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/deepslate_mithril_ore.json",
           "src/main/resources/assets/the_hobbit_mod/blockstates/deepslate_mithril_ore.json",
-          "src/main/resources/assets/the_hobbit_mod/models/block/deepslate_mithril_ore.json",
-          "src/main/resources/assets/the_hobbit_mod/models/item/deepslate_mithril_ore.json"
+          "src/main/resources/assets/the_hobbit_mod/models/item/deepslate_mithril_ore.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/deepslate_mithril_ore.json",
+          "src/main/resources/assets/the_hobbit_mod/models/block/deepslate_mithril_ore.json"
         ]
       },
       "path": "~/Blocks"
@@ -1325,9 +1329,9 @@
       "registry_name": "forger_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thehobbitmod/network/ForgerGuiButtonMessage.java",
+          "src/main/java/net/mcreator/thehobbitmod/client/gui/ForgerGuiScreen.java",
           "src/main/java/net/mcreator/thehobbitmod/world/inventory/ForgerGuiMenu.java",
-          "src/main/java/net/mcreator/thehobbitmod/client/gui/ForgerGuiScreen.java"
+          "src/main/java/net/mcreator/thehobbitmod/network/ForgerGuiButtonMessage.java"
         ]
       },
       "path": "~/Gui"
@@ -1340,8 +1344,8 @@
       "registry_name": "archaic_gold_ingot",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thehobbitmod/item/ArchaicGoldIngotItem.java",
-          "src/main/resources/assets/the_hobbit_mod/models/item/archaic_gold_ingot.json"
+          "src/main/resources/assets/the_hobbit_mod/models/item/archaic_gold_ingot.json",
+          "src/main/java/net/mcreator/thehobbitmod/item/ArchaicGoldIngotItem.java"
         ]
       },
       "path": "~/Items"
@@ -1369,13 +1373,13 @@
       "metadata": {
         "files": [
           "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/archaic_gold_biome_modifier.json",
-          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/archaic_gold.json",
-          "src/main/resources/assets/the_hobbit_mod/models/item/archaic_gold.json",
           "src/main/resources/data/the_hobbit_mod/loot_tables/blocks/archaic_gold.json",
           "src/main/resources/assets/the_hobbit_mod/models/block/archaic_gold.json",
-          "src/main/java/net/mcreator/thehobbitmod/block/ArchaicGoldBlock.java",
+          "src/main/resources/assets/the_hobbit_mod/blockstates/archaic_gold.json",
           "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/archaic_gold.json",
-          "src/main/resources/assets/the_hobbit_mod/blockstates/archaic_gold.json"
+          "src/main/resources/assets/the_hobbit_mod/models/item/archaic_gold.json",
+          "src/main/java/net/mcreator/thehobbitmod/block/ArchaicGoldBlock.java",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/archaic_gold.json"
         ]
       },
       "path": "~/Blocks"
@@ -1582,8 +1586,8 @@
       "registry_name": "the_steward_of_gondor",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thehobbitmod/item/TheStewardOfGondorItem.java",
-          "src/main/resources/assets/the_hobbit_mod/models/item/the_steward_of_gondor.json"
+          "src/main/resources/assets/the_hobbit_mod/models/item/the_steward_of_gondor.json",
+          "src/main/java/net/mcreator/thehobbitmod/item/TheStewardOfGondorItem.java"
         ]
       },
       "path": "~/Items"
@@ -1626,6 +1630,20 @@
         ]
       },
       "path": "~/Advancements"
+    },
+    {
+      "name": "SkySetup",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sky_setup",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/procedures/SkySetupProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [],
@@ -1734,9 +1752,9 @@
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:Mithril_ToolsSword",
+      "~CUSTOM:Orcrist",
       "~CUSTOM:Glamdring",
-      "~CUSTOM:Sting",
-      "~CUSTOM:Orcrist"
+      "~CUSTOM:Sting"
     ],
     "ITEMS:forge:mallorn_log": [
       "CUSTOM:MallornWood",
@@ -1780,16 +1798,16 @@
       "~Blocks.DIRT#0",
       "~Blocks.GRASS"
     ],
-    "BLOCKS:minecraft:mineable/axe": [
-      "~CUSTOM:MallornPlanks",
-      "~CUSTOM:MallornLog",
-      "~CUSTOM:MallornWood"
-    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:ArchaicGold",
       "~CUSTOM:DeepslateMithrilOre",
       "~CUSTOM:MithrilOre",
       "~CUSTOM:BurningMagma"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:MallornPlanks",
+      "~CUSTOM:MallornLog",
+      "~CUSTOM:MallornWood"
     ],
     "BIOMES:minecraft:has_structure/village_savanna": [
       "~CUSTOM:ElvenForest"
@@ -1799,9 +1817,6 @@
     ],
     "ITEMS:minecraft:shovels": [
       "~CUSTOM:Mithril_ToolsShovel"
-    ],
-    "BIOMES:minecraft:has_structure/village_plains": [
-      "~CUSTOM:HobbitPlains"
     ]
   },
   "tab_element_order": {},
@@ -1809,16 +1824,17 @@
     "en_us": {
       "item.the_hobbit_mod.mithril_armor_boots": "Mithril Boots",
       "block.the_lotr_mod.mallorn_leaves": "Mallorn Leaves",
-      "biome.the_hobbit_mod.elven_forest": "Elven Forest",
       "subtitles.nazgul_dead": "",
+      "biome.the_hobbit_mod.elven_forest": "Elven Forest",
+      "advancements.three_rings_to_the_elves.title": "Three Rings To The Elves...",
       "item.the_lotr_mod.orc_spawn_egg": "Orc Spawn Egg",
       "subtitles.feast_of_starlight": "",
       "item.the_lotr_mod.mithril_armor_boots": "Mithril Boots",
       "biome.the_lotr_mod.mordor": "Mordor",
       "advancements.the_bane_of_men.title": "The Bane Of Men",
       "block.the_lotr_mod.mallorn_wood": "Mallorn Wood",
-      "block.the_hobbit_mod.mallorn_pressure_plate": "Mallorn Pressure Plate",
       "advancements.elf_friend.descr": "Enter a Elvish Forest.",
+      "block.the_hobbit_mod.mallorn_pressure_plate": "Mallorn Pressure Plate",
       "subtitles.smaug": "",
       "item.the_hobbit_mod.burning_magma_shard": "Burning Magma Shard",
       "block.the_hobbit_mod.mallorn_fence": "Mallorn Fence",
@@ -1826,10 +1842,13 @@
       "item.the_lotr_mod.pipe": "Pipe",
       "subtitles.dreaming_of_bag_end": "",
       "itemGroup.tabthe_hobbit_mod": "The Hobbit Mod",
+      "advancements.far_over_the_misty_mountains.title": "Far Over The Misty Mountains Cold...",
       "item.the_hobbit_mod.mithril_tools_sword": "Mithril Sword",
       "item.the_lotr_mod.mithril_ingot": "Mithril Ingot",
       "item.the_lotr_mod.misty_mountains.desc": "Misty Mountains",
+      "advancements.a_tarnished_relic.title": "A Tarnished Relic",
       "item.the_hobbit_mod.pipe": "Pipe",
+      "advancements.where_the_dead_reawaken.title": "Where The Dead Reawaken",
       "block.the_hobbit_mod.mallorn_log": "Mallorn Log",
       "gui.the_hobbit_mod.forger_gui.button_melt": "Melt",
       "item.the_lotr_mod.burning_magma_shard": "Burning Magma Shard",
@@ -1865,12 +1884,15 @@
       "item.the_hobbit_mod.orcrist": "Orcrist",
       "advancements.one_does_not_simply.descr": "Walk into Mordor.",
       "biome.the_hobbit_mod.mordor": "Mordor",
+      "advancements.desolate_fields.descr": "Enter the Weathered Hills",
+      "advancements.a_tarnished_relic.descr": "Forge a Tarnished Ring.",
       "item.the_hobbit_mod.seven_rings": "The Seven Rings",
       "item.the_lotr_mod.sting": "Sting",
       "block.the_lotr_mod.mallorn_fence": "Mallorn Fence",
       "item.the_hobbit_mod.sting": "Sting",
       "block.the_hobbit_mod.archaic_gold": "Archaic Gold",
       "item.the_lotr_mod.mithril_armor_chestplate": "Mithril Chestplate",
+      "advancements.where_the_dead_reawaken.descr": "Step through the forboding Dead Marshes.",
       "block.the_lotr_mod.mallorn_stairs": "Mallorn Stairs",
       "advancements.the_bane_of_men.descr": "Hold the Nine Ring for the first time.",
       "item.the_hobbit_mod.mithril_tools_shovel": "Mithril Shovel",
@@ -1895,6 +1917,7 @@
       "item.the_hobbit_mod.glamdring": "Glamdring",
       "item.the_hobbit_mod.mithril_armor_chestplate": "Mithril Chestplate",
       "block.the_hobbit_mod.mallorn_fence_gate": "Mallorn Fence Gate",
+      "advancements.three_rings_to_the_elves.descr": "Obtain one of the Three Rings.",
       "entity.the_hobbit_mod.orc": "Orc",
       "block.the_lotr_mod.mallorn_fence_gate": "Mallorn Fence Gate",
       "item.the_lotr_mod.mithril_armor_leggings": "Mithril Leggings",
@@ -1902,9 +1925,11 @@
       "advancements.its_worth_is_greater.title": "It\u0027s worth is greater then the whole Shire...",
       "item.the_lotr_mod.mithril_tools_pickaxe": "Mithril Pickaxe",
       "subtitles.get_ring": "",
+      "advancements.far_over_the_misty_mountains.descr": "Enter the cruel Misty Mountains.",
       "item.the_lotr_mod.tarnished_ring": "Tarnished Ring",
       "block.the_lotr_mod.archaic_gold": "Archaic Gold",
       "item.the_lotr_mod.raw_archaic_gold": "Raw Archaic Gold",
+      "advancements.smoking_addict.descr": "Take your first whiff, and let it envelop you...",
       "item.the_hobbit_mod.the_one_ring": "The One Ring",
       "item.the_lotr_mod.nine_rings": "The Nine Rings",
       "item.the_lotr_mod.nazgul_spawn_egg": "Nazgul Spawn Egg",
@@ -1912,14 +1937,16 @@
       "advancements.mithril.descr": "Mine your first mithril.",
       "advancements.my_precious.descr": "Find the One Ring",
       "advancements.the_quiet_folk.title": "The Quiet Folk",
+      "item.the_hobbit_mod.the_steward_of_gondor.desc": "Howard Shore - LotR Trilogy",
       "item.the_hobbit_mod.nine_rings": "The Nine Rings",
       "biome.the_lotr_mod.dead_marshes": "Dead Marshes",
       "item.the_hobbit_mod.mithril_armor_helmet": "Mithril Helmet",
+      "item.the_hobbit_mod.the_steward_of_gondor": "The Steward Of Gondor",
       "biome.the_hobbit_mod.weather_hills": "Weather Hills",
       "item.the_hobbit_mod.mithril_tools_hoe": "Mithril Hoe",
       "item.the_hobbit_mod.mithril_armor_leggings": "Mithril Leggings",
       "item.the_hobbit_mod.tarnished_ring": "Tarnished Ring",
-      "item.the_hobbit_mod.misty_mountains.desc": "Misty Mountains",
+      "item.the_hobbit_mod.misty_mountains.desc": "Howard Shore - The Hobbit Trilogy",
       "subtitles.moon_runes": "",
       "block.the_hobbit_mod.mallorn_leaves": "Mallorn Leaves",
       "biome.the_lotr_mod.misty_mountain": "Misty Mountains",
@@ -1928,13 +1955,17 @@
       "subtitles.hobbit_ambient": "",
       "block.the_lotr_mod.mallorn_log": "Mallorn Log",
       "item.the_hobbit_mod.mithril_ingot": "Mithril Ingot",
+      "advancements.heart_of_a_dwarf.descr": "Obtain the Dwarf Rings.",
       "subtitles.gollum": "",
+      "advancements.desolate_fields.title": "Desolate Fields",
       "block.the_lotr_mod.forger": "The Forger",
+      "advancements.heart_of_a_dwarf.title": "Heart Of A Dwarf",
       "advancements.the_quiet_folk.descr": "Enter a Hobbit Plains biome.",
       "advancements.elf_friend.title": "Elf-Friend",
       "item.the_hobbit_mod.three_rings": "The Three Rings",
       "advancements.mithril.title": "Mithril!",
       "subtitles.steward_of_gondor": "",
+      "advancements.smoking_addict.title": "Smoking Addict",
       "biome.the_lotr_mod.hobbit_plains": "Hobbit Plains",
       "subtitles.misty_mountains": "",
       "item.the_hobbit_mod.mithril_tools_axe": "Mithril Axe",
@@ -2024,5 +2055,5 @@
     "credits": "gh5674, witherwraith",
     "modElementsPackage": "net.mcreator.thehobbitmod"
   },
-  "mcreatorVersion": 202400118518
+  "mcreatorVersion": 202400232117
 }

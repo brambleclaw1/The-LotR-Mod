@@ -1,6 +1,40 @@
 package net.mcreator.thehobbitmod.procedures;
 
+import org.joml.Matrix4f;
+
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.client.renderer.GameRenderer;
+import net.minecraft.client.renderer.FogRenderer;
+import net.minecraft.client.multiplayer.ClientLevel;
+import net.minecraft.client.Minecraft;
+
+import javax.annotation.Nullable;
+
+import java.util.function.Predicate;
+import java.util.List;
+
+import com.mojang.blaze3d.vertex.VertexFormat;
+import com.mojang.blaze3d.vertex.VertexBuffer;
+import com.mojang.blaze3d.vertex.Tesselator;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.DefaultVertexFormat;
+import com.mojang.blaze3d.vertex.BufferUploader;
+import com.mojang.blaze3d.vertex.BufferBuilder;
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.platform.GlStateManager;
 
 @Mod.EventBusSubscriber(value = Dist.CLIENT)
 public class CustomSkySunriseProcedure {
@@ -34,7 +68,7 @@ public class CustomSkySunriseProcedure {
 			RenderSystem.enableBlend();
 			RenderSystem.defaultBlendFunc();
 			RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
-			execute(null, level);
+			execute(null, level, entity);
 		}
 		RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
 		RenderSystem.defaultBlendFunc();
@@ -460,30 +494,34 @@ public class CustomSkySunriseProcedure {
 		}
 	}
 
-	public static void execute(LevelAccessor world) {
-		execute(null, world);
+	public static void execute(LevelAccessor world, Entity entity) {
+		execute(null, world, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world) {
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
+		if (entity == null)
+			return;
 		double worldtime = 0;
 		worldtime = world.dayTime();
-		if (worldtime > 23000) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation(("the_lotr_mod" + ":textures/" + "sunrise" + ".png")));
-			renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
-		} else {
-			if (worldtime > 13000) {
-				if (worldtime < 23000) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation(("the_lotr_mod" + ":textures/" + "night" + ".png")));
-					renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
-				} else {
-					if (worldtime > 12000) {
-						if (worldtime < 13000) {
-							RenderSystem.setShaderTexture(0, new ResourceLocation(("the_lotr_mod" + ":textures/" + "sunset" + ".png")));
-							renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
-						} else {
-							if (worldtime < 12000) {
-								RenderSystem.setShaderTexture(0, new ResourceLocation(("the_lotr_mod" + ":textures/" + "noon" + ".png")));
+		if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("the_hobbit_mod:middle_earth"))) {
+			if (worldtime > 23000) {
+				RenderSystem.setShaderTexture(0, new ResourceLocation(("the_lotr_mod" + ":textures/" + "sunrise" + ".png")));
+				renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
+			} else {
+				if (worldtime > 13000) {
+					if (worldtime < 23000) {
+						RenderSystem.setShaderTexture(0, new ResourceLocation(("the_lotr_mod" + ":textures/" + "night" + ".png")));
+						renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
+					} else {
+						if (worldtime > 12000) {
+							if (worldtime < 13000) {
+								RenderSystem.setShaderTexture(0, new ResourceLocation(("the_lotr_mod" + ":textures/" + "sunset" + ".png")));
 								renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
+							} else {
+								if (worldtime < 12000) {
+									RenderSystem.setShaderTexture(0, new ResourceLocation(("the_lotr_mod" + ":textures/" + "noon" + ".png")));
+									renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
+								}
 							}
 						}
 					}
