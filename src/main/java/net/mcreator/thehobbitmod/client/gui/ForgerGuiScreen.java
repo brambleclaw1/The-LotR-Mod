@@ -1,27 +1,13 @@
 package net.mcreator.thehobbitmod.client.gui;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.Button;
-import net.minecraft.client.gui.GuiGraphics;
-
-import net.mcreator.thehobbitmod.world.inventory.ForgerGuiMenu;
-import net.mcreator.thehobbitmod.network.ForgerGuiButtonMessage;
-import net.mcreator.thehobbitmod.TheHobbitModMod;
-
-import java.util.HashMap;
-
-import com.mojang.blaze3d.systems.RenderSystem;
-
 public class ForgerGuiScreen extends AbstractContainerScreen<ForgerGuiMenu> {
+
 	private final static HashMap<String, Object> guistate = ForgerGuiMenu.guistate;
+
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+
 	Button button_melt;
 
 	public ForgerGuiScreen(ForgerGuiMenu container, Inventory inventory, Component text) {
@@ -40,8 +26,11 @@ public class ForgerGuiScreen extends AbstractContainerScreen<ForgerGuiMenu> {
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(guiGraphics);
+
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
+
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
+
 	}
 
 	@Override
@@ -49,6 +38,7 @@ public class ForgerGuiScreen extends AbstractContainerScreen<ForgerGuiMenu> {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
+
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
 		guiGraphics.blit(new ResourceLocation("the_hobbit_mod:textures/screens/arrow.png"), this.leftPos + 115, this.topPos + 36, 0, 0, 16, 16, 16, 16);
@@ -66,6 +56,7 @@ public class ForgerGuiScreen extends AbstractContainerScreen<ForgerGuiMenu> {
 			this.minecraft.player.closeContainer();
 			return true;
 		}
+
 		return super.keyPressed(key, b, c);
 	}
 
@@ -77,13 +68,17 @@ public class ForgerGuiScreen extends AbstractContainerScreen<ForgerGuiMenu> {
 	@Override
 	public void init() {
 		super.init();
+
 		button_melt = Button.builder(Component.translatable("gui.the_hobbit_mod.forger_gui.button_melt"), e -> {
 			if (true) {
 				TheHobbitModMod.PACKET_HANDLER.sendToServer(new ForgerGuiButtonMessage(0, x, y, z));
 				ForgerGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 65, this.topPos + 58, 46, 20).build();
+
 		guistate.put("button:button_melt", button_melt);
 		this.addRenderableWidget(button_melt);
+
 	}
+
 }

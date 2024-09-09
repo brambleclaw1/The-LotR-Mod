@@ -1,0 +1,26 @@
+{
+  "_fv": 66,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "The Steward Of Gondor",
+    "rarity": "UNCOMMON",
+    "texture": "music_disc_steward",
+    "description": "Howard Shore - LotR Trilogy",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TheHobbitMod"
+      }
+    ],
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:steward_of_gondor"
+    },
+    "lengthInTicks": 1880,
+    "analogOutput": 2
+  }
+}

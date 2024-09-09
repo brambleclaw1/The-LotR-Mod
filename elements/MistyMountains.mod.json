@@ -4,8 +4,8 @@
   "definition": {
     "name": "Misty Mountains",
     "rarity": "RARE",
-    "texture": "mistymountains",
-    "description": "Misty Mountains",
+    "texture": "music_disc_mountains",
+    "description": "Howard Shore - The Hobbit Trilogy",
     "creativeTabs": [
       {
         "value": "CUSTOM:TheHobbitMod"
@@ -13,6 +13,9 @@
     ],
     "specialInformation": {
       "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
     },
     "music": {
       "value": "CUSTOM:misty_mountains"

@@ -15,34 +15,34 @@
         "value": "Items.DISC_FRAGMENT_5"
       },
       {
-        "value": "Items.DISC_FRAGMENT_5"
+        "value": "CUSTOM:ArchaicGoldIngot"
       },
       {
         "value": "Items.DISC_FRAGMENT_5"
       },
       {
-        "value": "Items.DISC_FRAGMENT_5"
+        "value": "CUSTOM:ArchaicGoldIngot"
       },
       {
-        "value": "CUSTOM:MithrilIngot"
+        "value": "Items.EMERALD"
       },
       {
-        "value": "Items.DISC_FRAGMENT_5"
-      },
-      {
-        "value": "Items.DISC_FRAGMENT_5"
+        "value": "CUSTOM:ArchaicGoldIngot"
       },
       {
         "value": "Items.DISC_FRAGMENT_5"
+      },
+      {
+        "value": "CUSTOM:ArchaicGoldIngot"
       },
       {
         "value": "Items.DISC_FRAGMENT_5"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:MistyMountains"
+      "value": "CUSTOM:TheStewardOfGondor"
     },
-    "name": "misty_mountains_recipe",
+    "name": "steward_disc_recipe",
     "namespace": "mod"
   }
 }

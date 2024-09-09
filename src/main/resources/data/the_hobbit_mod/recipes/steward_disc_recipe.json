@@ -2,20 +2,23 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aaa",
     "aba",
-    "aaa"
+    "bcb",
+    "aba"
   ],
   "key": {
     "a": {
       "item": "minecraft:disc_fragment_5"
     },
     "b": {
-      "item": "the_hobbit_mod:mithril_ingot"
+      "item": "the_hobbit_mod:archaic_gold_ingot"
+    },
+    "c": {
+      "item": "minecraft:emerald"
     }
   },
   "result": {
-    "item": "the_hobbit_mod:misty_mountains",
+    "item": "the_hobbit_mod:deleted_mod_element",
     "count": 1
   }
 }

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "the_hobbit_mod:dead_marshes",
+  "features": "the_hobbit_mod:tomb",
+  "step": "surface_structures"
+}

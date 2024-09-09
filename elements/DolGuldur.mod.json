@@ -9,7 +9,7 @@
         "value": "Blocks.STRUCTURE_BLOCK"
       },
       {
-        "value": "Blocks.AIR"
+        "value": "Blocks.DIRT#0"
       }
     ],
     "spacing": 40,
@@ -19,9 +19,9 @@
         "value": "CUSTOM:Mordor"
       }
     ],
-    "terrainAdaptation": "bury",
+    "terrainAdaptation": "beard_thin",
     "generationStep": "SURFACE_STRUCTURES",
-    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "surfaceDetectionType": "WORLD_SURFACE",
     "useStartHeight": false,
     "startHeightProviderType": "UNIFORM",
     "startHeightMin": 0,

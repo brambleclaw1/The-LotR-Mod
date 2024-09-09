@@ -2,8 +2,8 @@
   "replace": false,
   "values": [
     "the_hobbit_mod:mithril_tools_sword",
-    "the_hobbit_mod:orcrist",
     "the_hobbit_mod:glamdring",
-    "the_hobbit_mod:sting"
+    "the_hobbit_mod:sting",
+    "the_hobbit_mod:orcrist"
   ]
 }

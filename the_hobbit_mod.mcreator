@@ -114,19 +114,6 @@
       "path": "~/Blocks"
     },
     {
-      "name": "MithrilIngotRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mithril_ingot_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/the_hobbit_mod/recipes/mithril_ingot_recipe.json"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
       "name": "Sting",
       "type": "tool",
       "compiles": true,
@@ -404,19 +391,6 @@
       "path": "~/Recipes"
     },
     {
-      "name": "MistyMountainsRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "misty_mountains_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/the_hobbit_mod/recipes/misty_mountains_recipe.json"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
       "name": "TheHobbitModInstall",
       "type": "achievement",
       "compiles": true,
@@ -515,19 +489,6 @@
         ]
       },
       "path": "~/Procedures"
-    },
-    {
-      "name": "DolGuldurLoot",
-      "type": "loottable",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dol_guldur_loot",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/the_hobbit_mod/loot_tables/chests/dol_guldur_loot.json"
-        ]
-      },
-      "path": "~/Loot Tables"
     },
     {
       "name": "Mordor",
@@ -1492,6 +1453,179 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "ATarnishedRelic",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_tarnished_relic",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/a_tarnished_relic.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "DolGuldurLootTwo",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dol_guldur_loot_two",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/loot_tables/chests/dol_guldur_loot_two.json"
+        ]
+      },
+      "path": "~/Loot Tables"
+    },
+    {
+      "name": "ThreeRingsToTheElves",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "three_rings_to_the_elves",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/three_rings_to_the_elves.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "SmokingAddict",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smoking_addict",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/smoking_addict.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "FarOverTheMistyMountains",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "far_over_the_misty_mountains",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/far_over_the_misty_mountains.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "DolGuldurLootOne",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dol_guldur_loot_one",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/loot_tables/chests/dol_guldur_loot_one.json"
+        ]
+      },
+      "path": "~/Loot Tables"
+    },
+    {
+      "name": "Tomb",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomb",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/worldgen/configured_feature/tomb.json",
+          "src/main/resources/data/the_hobbit_mod/forge/biome_modifier/tomb_biome_modifier.json",
+          "src/main/resources/data/the_hobbit_mod/worldgen/placed_feature/tomb.json"
+        ],
+        "has_nbt_structure": true
+      },
+      "path": "~/Features"
+    },
+    {
+      "name": "HeartOfADwarf",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_of_a_dwarf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/heart_of_a_dwarf.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "StewardDiscRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steward_disc_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/recipes/steward_disc_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "TheStewardOfGondor",
+      "type": "musicdisc",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_steward_of_gondor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thehobbitmod/item/TheStewardOfGondorItem.java",
+          "src/main/resources/assets/the_hobbit_mod/models/item/the_steward_of_gondor.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "WhereTheDeadReawaken",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "where_the_dead_reawaken",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/where_the_dead_reawaken.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "NazgulDrops",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nazgul_drops",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/loot_tables/entities/nazgul.json"
+        ]
+      },
+      "path": "~/Loot Tables"
+    },
+    {
+      "name": "DesolateFields",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desolate_fields",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_hobbit_mod/advancements/desolate_fields.json"
+        ]
+      },
+      "path": "~/Advancements"
     }
   ],
   "variable_elements": [],
@@ -1559,6 +1693,14 @@
       ],
       "category": "music",
       "subtitle": ""
+    },
+    {
+      "name": "steward_of_gondor",
+      "files": [
+        "steward_of_gondor"
+      ],
+      "category": "record",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -1592,9 +1734,9 @@
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:Mithril_ToolsSword",
-      "~CUSTOM:Orcrist",
       "~CUSTOM:Glamdring",
-      "~CUSTOM:Sting"
+      "~CUSTOM:Sting",
+      "~CUSTOM:Orcrist"
     ],
     "ITEMS:forge:mallorn_log": [
       "CUSTOM:MallornWood",
@@ -1626,6 +1768,7 @@
       "~CUSTOM:ElvenForest"
     ],
     "ITEMS:minecraft:music_discs": [
+      "~CUSTOM:TheStewardOfGondor",
       "~CUSTOM:MistyMountains"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
@@ -1637,16 +1780,16 @@
       "~Blocks.DIRT#0",
       "~Blocks.GRASS"
     ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:MallornPlanks",
+      "~CUSTOM:MallornLog",
+      "~CUSTOM:MallornWood"
+    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:ArchaicGold",
       "~CUSTOM:DeepslateMithrilOre",
       "~CUSTOM:MithrilOre",
       "~CUSTOM:BurningMagma"
-    ],
-    "BLOCKS:minecraft:mineable/axe": [
-      "~CUSTOM:MallornPlanks",
-      "~CUSTOM:MallornLog",
-      "~CUSTOM:MallornWood"
     ],
     "BIOMES:minecraft:has_structure/village_savanna": [
       "~CUSTOM:ElvenForest"
@@ -1656,6 +1799,9 @@
     ],
     "ITEMS:minecraft:shovels": [
       "~CUSTOM:Mithril_ToolsShovel"
+    ],
+    "BIOMES:minecraft:has_structure/village_plains": [
+      "~CUSTOM:HobbitPlains"
     ]
   },
   "tab_element_order": {},
@@ -1663,16 +1809,16 @@
     "en_us": {
       "item.the_hobbit_mod.mithril_armor_boots": "Mithril Boots",
       "block.the_lotr_mod.mallorn_leaves": "Mallorn Leaves",
-      "subtitles.nazgul_dead": "",
       "biome.the_hobbit_mod.elven_forest": "Elven Forest",
+      "subtitles.nazgul_dead": "",
       "item.the_lotr_mod.orc_spawn_egg": "Orc Spawn Egg",
       "subtitles.feast_of_starlight": "",
       "item.the_lotr_mod.mithril_armor_boots": "Mithril Boots",
       "biome.the_lotr_mod.mordor": "Mordor",
       "advancements.the_bane_of_men.title": "The Bane Of Men",
       "block.the_lotr_mod.mallorn_wood": "Mallorn Wood",
-      "advancements.elf_friend.descr": "Enter a Elvish Forest.",
       "block.the_hobbit_mod.mallorn_pressure_plate": "Mallorn Pressure Plate",
+      "advancements.elf_friend.descr": "Enter a Elvish Forest.",
       "subtitles.smaug": "",
       "item.the_hobbit_mod.burning_magma_shard": "Burning Magma Shard",
       "block.the_hobbit_mod.mallorn_fence": "Mallorn Fence",
@@ -1788,6 +1934,7 @@
       "advancements.elf_friend.title": "Elf-Friend",
       "item.the_hobbit_mod.three_rings": "The Three Rings",
       "advancements.mithril.title": "Mithril!",
+      "subtitles.steward_of_gondor": "",
       "biome.the_lotr_mod.hobbit_plains": "Hobbit Plains",
       "subtitles.misty_mountains": "",
       "item.the_hobbit_mod.mithril_tools_axe": "Mithril Axe",
@@ -1877,5 +2024,5 @@
     "credits": "gh5674, witherwraith",
     "modElementsPackage": "net.mcreator.thehobbitmod"
   },
-  "mcreatorVersion": 202400232117
+  "mcreatorVersion": 202400118518
 }
